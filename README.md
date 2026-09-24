@@ -254,6 +254,7 @@ build.
 | Low citation recall | 0.43 micro | Answers cite only what each statement needs |
 | Unfamiliar value formats | Dates and times in words or compact timestamps ("half past two", 202601291400) | The validator reads only numeric date and time formats, so such values are rejected rather than read |
 | Goal replacement ignores attestation | Goal handling | An unsigned draft plan can replace a signed goal |
+| Weighted linking can merge distinct sessions | Linking of observations without a shared visit ID (not triggered in this packet) | Participants match on any shared word, so two same-day sessions from different documents whose clinicians share a credential (e.g. LCSW) reach 0.8 (date + service + participants) and link even with no time overlap. Fix: require overlapping times before a weighted match can link, and compare participants by full name |
 
 Every lost point is listed in [`submission/benchmark/README.md`](submission/benchmark/README.md).
 
