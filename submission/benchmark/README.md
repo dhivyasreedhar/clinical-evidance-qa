@@ -53,11 +53,16 @@ dates and times of outreach calls in the missed-visit log).
   - DEV-60: gives the strongest weekly conclusion for the wrong week.
 
 **Held-out set** (15 questions, reported separately in `heldout_grades.json`): 15/15 published,
-factual 27/30 (graded with the same evidence the development judge sees). The losses:
+factual 26/30. The losses:
 
 - HO-03 counts the coordination call among the appointments not delivered.
 - HO-05 leaves out the 15 partner-only minutes of January 30.
-- HO-06 gives the January 19 group's 60 minutes without saying the departure time was corrected.
+- HO-06 is marked down for naming the January 19 individual clinician, who is correctly named in
+  BH-D105 (a grader error).
+- HO-10 gives the day count without listing the days.
+
+A regrade after these results were known, with the same evidence the development judge sees, gave
+27/30; the first grading is the reported result.
 
 HO-02 informed an earlier fix, so the set is not fully held out.
 

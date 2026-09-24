@@ -164,7 +164,7 @@ build recorded and the other did not).
 `submission/benchmark/README.md` lists the remaining losses.
 
 **Held-out set** (15 questions written from the documents, reported separately): 15/15
-published, factual 27/30. One held-out question (HO-02) informed a fix, so the set is not fully
+published, factual 26/30 (27/30 on a later regrade). One held-out question (HO-02) informed a fix, so the set is not fully
 held out. Held-out answers are graded with the same rubric, against references the engine's
 author wrote.
 

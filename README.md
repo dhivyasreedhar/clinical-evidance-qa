@@ -15,8 +15,8 @@ answer is computed by code, and every statement links to the source lines it res
 |---|---|
 | Record | 12 therapy sessions (5 individual, 5 group, 2 family) on 11 days · 585 **or** 595 minutes (one unresolved conflict) · weekly goal: not met, not met, met, cannot be determined |
 | Development benchmark (65 questions) | 65/65 published · judge factual **119/130** · 55/65 fully correct · exact calculations **4/4** (55/55 fields) |
-| DEV-01 to DEV-05 (current code, one cold run) | 5/5 published (4 answered, 1 partial) · factual 2 and evidence 2 on all five · 47–76 s each, within the 90 s budget · $0.84 in total |
-| Held-out set (15 questions) | 15/15 published · judge factual **27/30** |
+| DEV-01 to DEV-05 (current code, one cold run) | 5/5 published (4 answered, 1 partial) · factual 2 and evidence 2 on all five (three wording errors the judge missed; see below) · 47–76 s each, within the 90 s budget · $0.84 in total |
+| Held-out set (15 questions) | 15/15 published · judge factual **26/30** (27/30 on a later regrade) |
 | Stability | A second build from scratch gives an **identical** episode ledger |
 | Tests | 144 automated tests without model calls, plus 2 browser tests |
 
@@ -106,7 +106,7 @@ The model only reads. **Code decides and computes.**
 | 2. Extract | Sonnet, temperature 0 | Observations as `{value, quote, block}`. The prompt is generated from the policy's observation kinds and fields |
 | 2′. Cross-check | Sonnet ×2, code | Every document is read a second time, independently. Code compares the key fields of every event. A disagreement gets one focused re-read and is settled when two of three readings agree, otherwise it stays an open item. A re-read that contradicts both readings is rejected |
 | 3. Validate and sweep | code | A value must appear inside its own quote, so no subtraction and no unstated date can pass. Every time, date, duration, ID and score in the text must be covered, and uncovered mentions get one targeted re-extraction |
-| 4. Link | code | Same visit ID and issuer make one event. Other matches are weighted (date, service, time, participants) and reported as candidates, never merged. Copies are detected; a note naming another patient is set aside |
+| 4. Link | code | Same visit ID and issuer make one event. Otherwise a weighted match (date, service, time, participants) links observations at 0.8 or above; matches from 0.5 to 0.8 are reported as candidates, never merged. Copies are detected; a note naming another patient is set aside |
 | 5. Reconcile | code + `policy.toml` | Per event and field, four steps: keep only admissible evidence; let a correction supersede only the fields it names; rank signed over unsigned over draft, and recorded at the time over later; decide documented / corroborated / established / conflicting. Conflicts stay as scenarios (40 **or** 50 minutes). Minutes are patient presence minus breaks and gaps |
 | 6–7. Plan and execute | Sonnet, code | Queries in a small query language, each stating its population, plus a checklist. Code runs them with scenario arithmetic and records provenance for every row |
 | 8. Write | Sonnet | Typed statements (value, conflict, missing, inference, narrative) citing results, facts and source passages |
@@ -203,19 +203,33 @@ and graded by the same judge ([`dev01-05_answers.md`](submission/dev01-05_answer
 All five were published in one run, in 47–76 s each (median 59 s), for $0.84 in total, with no
 statement removed. DEV-01 was published as partial because its answer described the January 8 outreach call without citing that record, so the check could not verify it and the 90-second budget left no time for a repair; the fix is for code to add the missing citation when a statement describes a listed record it did not cite.
 
+**Wording errors the judge missed.** A manual read of these five answers found three errors that
+change no number, and all three still scored full marks:
+
+- DEV-01 says eight encounters "were attended but excluded", but the list includes two no-shows and
+  two cancellations.
+- DEV-05 says "Rowan and the patient both reported"; Rowan is the patient.
+- DEV-02 calls both January 26 notes "primary clinical records"; BH-D111 is the participating
+  clinician's record.
+
+This is why the judge's scores are treated as advisory.
+
 **Against the benchmark run,** the two lost points are fixed: DEV-01 no longer adds a count that
 includes medication visits, and DEV-05 now says that the January 26 import repeats the January 16
 form. The slowest answer fell from 152 s to 70 s.
 
 ### Held-out set (15 questions)
 
-15/15 published; judge factual **27/30**, evidence 1.87. These are regraded with the same evidence
-the development judge sees; the first grading, which gave the judge less evidence, scored 26/30.
-The three lost points:
+15/15 published; judge factual **26/30**, evidence 1.60. The four lost points:
 
 - **HO-03** counted the coordination call among the appointments not delivered.
 - **HO-05** left out the 15 minutes with the partner alone on January 30.
-- **HO-06** did not say that the January 19 departure time was corrected.
+- **HO-06** was marked down for naming the January 19 individual clinician, who is correctly named
+  in BH-D105 (a grader error).
+- **HO-10** gave the day count without listing the days.
+
+After these results were known, the set was regraded with the same evidence the development judge
+sees, which gave 27/30 (evidence 1.87). The first grading is the result reported here.
 
 HO-02 informed an earlier fix, so the set is not fully held out.
 
