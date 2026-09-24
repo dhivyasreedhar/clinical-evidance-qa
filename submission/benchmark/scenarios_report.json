@@ -1,0 +1,1602 @@
+[
+ {
+  "id": "S01",
+  "title": "Late-entry addendum resolves the HG-E115 conflict (12-hour times, abbreviations, /s/ signature)",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E115",
+     "field": "minutes",
+     "value": 50,
+     "status": [
+      "established"
+     ]
+    },
+    "ok": true,
+    "got": {
+     "value": 50.0,
+     "scenarios": [],
+     "status": "established"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      595
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      595.0
+     ]
+    }
+   },
+   {
+    "check": {
+     "type": "week",
+     "start": "2026-01-26",
+     "status": "met"
+    },
+    "ok": true,
+    "got": {
+     "by_threshold": [
+      {
+       "threshold": "at least 3 days",
+       "measured": 3.0,
+       "outcome": "met"
+      },
+      {
+       "threshold": "at least 150 minutes",
+       "measured": 155.0,
+       "outcome": "met"
+      }
+     ],
+     "overall": "met",
+     "status": "met",
+     "checks": [
+      {
+       "unit": "days",
+       "threshold": 3.0,
+       "comparator": "at_least",
+       "measured": 3.0,
+       "outcome": "met",
+       "covered": "2026-01-26..2026-01-30",
+       "partial_week": true,
+       "counted": [
+        "HG-E115",
+        "HG-E118",
+        "HG-E119"
+       ],
+       "facts": [
+        "F-9caa8013",
+        "F-bd5d2dc7",
+        "F-61aa9996",
+        "F-b0c32ec1",
+        "F-a04a4b12",
+        "F-12b53ed8",
+        "F-a496bd16",
+        "F-4f8ccef4",
+        "F-fc6415ee",
+        "F-5595cf7d"
+       ]
+      },
+      {
+       "unit": "minutes",
+       "threshold": 150.0,
+       "comparator": "at_least",
+       "measured": 155.0,
+       "outcome": "met",
+       "covered": "2026-01-26..2026-01-30",
+       "partial_week": true,
+       "counted": [
+        "HG-E115",
+        "HG-E118",
+        "HG-E119"
+       ],
+       "facts": [
+        "F-8366d374",
+        "F-d4d4d9ce",
+        "F-ef23c2d5",
+        "F-7c3ab780",
+        "F-77453ba4",
+        "F-432c0ae9",
+        "F-3c217ee3",
+        "F-f8fbe453",
+        "F-8e460404",
+        "F-000c5fd2",
+        "F-b53b8e00"
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S01-Q1",
+    "question": "How many patient-present therapy minutes did Rowan receive in the week of January 26 to February 1, 2026, and was the weekly treatment-plan goal met?",
+    "status": "answered",
+    "answer": "Rowan received 155 patient-present therapy minutes in the week of January 26\u2013February 1, 2026, across three attended sessions: 50 minutes of individual therapy on January 26, 75 minutes of group therapy on January 29, and 30 minutes of family therapy on January 30. The weekly treatment-plan goal (at least 150 patient-present therapy minutes per week) was met: the 150-minute threshold measured 155 minutes (met). Note that the goal's episode end date is January 30, 2026, so the check covers January 26\u201330 as a partial week; all three counted sessions fell within that window. Three encounters were not counted toward the goal: the January 27 group session (no-show), the January 28 individual session (cancelled by patient), and the January 30 medication management visit (service type excluded from the goal).",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   },
+   {
+    "id": "S01-Q2",
+    "question": "What was Rowan's total patient-present therapy time for the whole episode, in minutes and hours?",
+    "status": "answered",
+    "answer": "Rowan's total patient-present therapy time for the whole episode (all 12 attended, goal-eligible therapy visits from 2026-01-05 to 2026-01-30, covering individual, group, and family psychotherapy) was 595 minutes, or 9 hours 55 minutes.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 1,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "patient patient_name: Rowan Mercer or MERCER, ROWAN \u2014 Sources of equal standing disagree; every value is kept as a scenario."
+  ],
+  "usage": {
+   "calls": 11,
+   "cached": 87,
+   "input_tokens": 62486,
+   "output_tokens": 6415,
+   "cost_usd": 0.2566,
+   "full_cost_usd": 4.1665,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S01_addendum_HG-E115_late_entry": 2,
+    "plan": 2,
+    "answer": 2,
+    "check": 2,
+    "frame": 1,
+    "scenario-grade": 2
+   },
+   "seconds": 92.4
+  }
+ },
+ {
+  "id": "S02",
+  "title": "New session arrives in a CSV scheduling export (US dates, 12-hour times)",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E121",
+     "field": "minutes",
+     "value": 45
+    },
+    "ok": true,
+    "got": {
+     "value": 45.0,
+     "scenarios": [],
+     "status": "documented"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 13,
+     "days": 12,
+     "minutes": [
+      630,
+      640
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 13,
+     "days": 12,
+     "minutes": [
+      630.0,
+      640.0
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S02-Q1",
+    "question": "How many individual psychotherapy sessions did Rowan attend during the episode, and on which dates?",
+    "status": "answered",
+    "answer": "Rowan attended 6 individual psychotherapy sessions during the episode, on January 5, January 14, January 19, January 21, January 26, and January 27, 2026. One additional individual psychotherapy appointment (January 8) was a no-show, and one (January 28) was cancelled by Rowan before the appointment; neither counts as an attended session.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 7,
+   "cached": 87,
+   "input_tokens": 35013,
+   "output_tokens": 3194,
+   "cost_usd": 0.1408,
+   "full_cost_usd": 4.0508,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S02_scheduling_export_2026-01-27.csv": 2,
+    "plan": 1,
+    "answer": 1,
+    "check": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 45.0
+  }
+ },
+ {
+  "id": "S03",
+  "title": "Family session documented only by a stated length ('1 hr 15 min'), day-month date format",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E122",
+     "field": "minutes",
+     "value": 75
+    },
+    "ok": true,
+    "got": {
+     "value": 75.0,
+     "scenarios": [],
+     "status": "documented"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 13,
+     "days": 12,
+     "minutes": [
+      660,
+      670
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 13,
+     "days": 12,
+     "minutes": [
+      660.0,
+      670.0
+     ]
+    }
+   },
+   {
+    "check": {
+     "type": "week",
+     "start": "2026-01-19",
+     "status": "met"
+    },
+    "ok": true,
+    "got": {
+     "by_threshold": [
+      {
+       "threshold": "at least 3 days",
+       "measured": 4.0,
+       "outcome": "met"
+      },
+      {
+       "threshold": "at least 150 minutes",
+       "measured": 255.0,
+       "outcome": "met"
+      }
+     ],
+     "overall": "met",
+     "status": "met",
+     "checks": [
+      {
+       "unit": "days",
+       "threshold": 3.0,
+       "comparator": "at_least",
+       "measured": 4.0,
+       "outcome": "met",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112",
+        "HG-E113",
+        "HG-E122"
+       ],
+       "facts": [
+        "F-9caa8013",
+        "F-bd5d2dc7",
+        "F-61aa9996",
+        "F-b0c32ec1",
+        "F-a04a4b12",
+        "F-12b53ed8",
+        "F-a496bd16",
+        "F-4f8ccef4",
+        "F-fc6415ee",
+        "F-5595cf7d"
+       ]
+      },
+      {
+       "unit": "minutes",
+       "threshold": 150.0,
+       "comparator": "at_least",
+       "measured": 255.0,
+       "outcome": "met",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112",
+        "HG-E113",
+        "HG-E122"
+       ],
+       "facts": [
+        "F-8366d374",
+        "F-d4d4d9ce",
+        "F-ef23c2d5",
+        "F-7c3ab780",
+        "F-77453ba4",
+        "F-432c0ae9",
+        "F-3c217ee3",
+        "F-f8fbe453",
+        "F-8e460404",
+        "F-000c5fd2",
+        "F-b53b8e00"
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S03-Q1",
+    "question": "How much family therapy did Rowan receive, session by session and in total?",
+    "status": "answered",
+    "answer": "Rowan received family therapy in three sessions: January 9 (45 minutes), January 23 (75 minutes), and January 30 (30 minutes). The total family therapy minutes received across all three sessions was 150 minutes. On January 30, Rowan joined the session at 13:15 and participated through the end at 13:45; the first 15 minutes (13:00\u201313:15) were partner-only time and are not counted in Rowan's 30 credited minutes, though the full therapist session ran 45 minutes.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 10,
+   "cached": 87,
+   "input_tokens": 67664,
+   "output_tokens": 6656,
+   "cost_usd": 0.2734,
+   "full_cost_usd": 4.1834,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S03_family_session_2026-01-23": 2,
+    "plan": 2,
+    "answer": 2,
+    "check": 2,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 86.2
+  }
+ },
+ {
+  "id": "S04",
+  "title": "E-mail correction: the January 22 attendance row belonged to another patient",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E113",
+     "field": "disposition",
+     "value": "excluded"
+    },
+    "ok": true,
+    "got": {
+     "value": "excluded",
+     "scenarios": [],
+     "status": "established"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 11,
+     "days": 10,
+     "minutes": [
+      540,
+      550
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 11,
+     "days": 10,
+     "minutes": [
+      540.0,
+      550.0
+     ]
+    }
+   },
+   {
+    "check": {
+     "type": "week",
+     "start": "2026-01-19",
+     "status": "not_met"
+    },
+    "ok": true,
+    "got": {
+     "by_threshold": [
+      {
+       "threshold": "at least 3 days",
+       "measured": 2.0,
+       "outcome": "not_met"
+      },
+      {
+       "threshold": "at least 150 minutes",
+       "measured": 135.0,
+       "outcome": "not_met"
+      }
+     ],
+     "overall": "not_met",
+     "status": "not_met",
+     "checks": [
+      {
+       "unit": "days",
+       "threshold": 3.0,
+       "comparator": "at_least",
+       "measured": 2.0,
+       "outcome": "not_met",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112"
+       ],
+       "facts": [
+        "F-9caa8013",
+        "F-bd5d2dc7",
+        "F-61aa9996",
+        "F-b0c32ec1",
+        "F-a04a4b12",
+        "F-12b53ed8",
+        "F-a496bd16",
+        "F-4f8ccef4",
+        "F-fc6415ee",
+        "F-5595cf7d"
+       ]
+      },
+      {
+       "unit": "minutes",
+       "threshold": 150.0,
+       "comparator": "at_least",
+       "measured": 135.0,
+       "outcome": "not_met",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112"
+       ],
+       "facts": [
+        "F-8366d374",
+        "F-d4d4d9ce",
+        "F-ef23c2d5",
+        "F-7c3ab780",
+        "F-77453ba4",
+        "F-432c0ae9",
+        "F-3c217ee3",
+        "F-f8fbe453",
+        "F-8e460404",
+        "F-000c5fd2",
+        "F-b53b8e00"
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S04-Q1",
+    "question": "Did Rowan attend the January 22 skills group, and what does that mean for the weekly goal in the week of January 19 to 25?",
+    "status": "answered",
+    "answer": "Rowan did not attend the January 22 skills group. The attendance register initially recorded an arrival at 10:30 and departure at 11:30, but a signed correction established that this register row was entered in error and belongs to a different group member; there was no patient contact for Rowan on January 22. For the full week of January 19\u201325, the weekly goals were not met on either threshold. The three included visits (group and individual on January 19, individual on January 21) covered only 2 distinct therapy days against the threshold of at least 3 days (not met), and totaled 135 minutes against the threshold of at least 150 minutes (not met). Overall status: not met. Because Rowan did not attend, the January 22 group encounter is excluded from goal-eligible visits and does not count toward either weekly threshold.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 10,
+   "cached": 87,
+   "input_tokens": 41872,
+   "output_tokens": 6402,
+   "cost_usd": 0.2011,
+   "full_cost_usd": 4.1111,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S04_email_attendance_correction_HG-E113": 2,
+    "sweep:S04_email_attendance_correction_HG-E113": 2,
+    "reread:S04_email_attendance_correction_HG-E113": 1,
+    "plan": 1,
+    "answer": 1,
+    "check": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 95.7
+  }
+ },
+ {
+  "id": "S05",
+  "title": "OCR-damaged unsigned draft gives a shorter duration",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E107",
+     "field": "minutes",
+     "value": 45
+    },
+    "ok": true,
+    "got": {
+     "value": 45.0,
+     "scenarios": [],
+     "status": "established"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585,
+      595
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585.0,
+      595.0
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S05-Q1",
+    "question": "How long was the January 14 individual session, and is there any conflicting account of its length?",
+    "status": "answered",
+    "answer": "The January 14 individual session_minutes are either 30 or 45 minutes \u2014 the record is conflicting. The signed therapy note records an 11:00\u201311:45 patient-present session (45 minutes), while a draft note records the session as 11:00\u201311:30 (30 minutes); the two accounts are unresolved.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 1,
+     "evidence": 2,
+     "missing_or_wrong": [
+      "Fails to resolve the conflict: the signed final note (45 min) outranks the unsigned auto-saved draft (30 min), so 45 minutes stands as the authoritative record. The answer treats the two accounts as equally unresolved, which loses the required uncertainty-resolution."
+     ]
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E107 session_minutes: 30.0 or 45.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time.",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 8,
+   "cached": 87,
+   "input_tokens": 32634,
+   "output_tokens": 3245,
+   "cost_usd": 0.128,
+   "full_cost_usd": 4.0379,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S05_draft_note_HG-E107_ocr": 2,
+    "plan": 1,
+    "answer": 1,
+    "check": 2,
+    "repair": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 50.3
+  }
+ },
+ {
+  "id": "S06",
+  "title": "Paid claim line (835 remittance) for a cancelled appointment",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E117",
+     "field": "disposition",
+     "value": "excluded"
+    },
+    "ok": true,
+    "got": {
+     "value": "excluded",
+     "scenarios": [],
+     "status": "established"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585,
+      595
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585.0,
+      595.0
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S06-Q1",
+    "question": "A paid claim exists for the January 28 individual appointment. Was that session delivered, and does it count toward Rowan's therapy minutes?",
+    "status": "answered",
+    "answer": "The January 28 individual session (scheduled 14:00\u201314:45) was not delivered. Rowan cancelled before the appointment start, citing a personal scheduling conflict, and is recorded as not attended. Because Rowan did not attend, the session is excluded and does not count toward the therapy minutes goal. Although a paid claim (code 90834, $160.00) exists for this date, the clinical record documents a patient cancellation with no service delivered.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 10,
+   "cached": 87,
+   "input_tokens": 33135,
+   "output_tokens": 5504,
+   "cost_usd": 0.1528,
+   "full_cost_usd": 4.0628,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S06_claim_line_HG-E117": 2,
+    "reread:S06_claim_line_HG-E117": 1,
+    "plan": 1,
+    "answer": 1,
+    "check": 2,
+    "repair": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 78.4
+  }
+ },
+ {
+  "id": "S07",
+  "title": "A different patient's note is in the folder",
+  "checks": [
+   {
+    "check": {
+     "type": "no_event",
+     "id": "HG-E201"
+    },
+    "ok": true,
+    "got": []
+   },
+   {
+    "check": {
+     "type": "open_item",
+     "kind": "other_patient",
+     "min": 1
+    },
+    "ok": true,
+    "got": [
+     "S07_other_patient_note was set aside: MRN HG-M999 is not the record's patient (HG-M042); date of birth 1985-02-02 is not the record's patient (1991-04-12). None of its content is in this record."
+    ]
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585,
+      595
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585.0,
+      595.0
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S07-Q1",
+    "question": "How many therapy sessions did Rowan attend in the week of January 19 to 25, and how many patient-present minutes?",
+    "status": "answered",
+    "answer": "Rowan attended 4 therapy sessions in the week of January 19\u201325 (a group and an individual session on January 19, an individual session on January 21, and a group session on January 22), totaling 180 patient-present minutes. A fifth encounter that week (January 23, care coordination) is excluded from both counts because Rowan did not participate \u2014 the contact was between the clinician and an outside social worker only, with no patient contact.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "S07_other_patient_note was set aside: MRN HG-M999 is not the record's patient (HG-M042); date of birth 1985-02-02 is not the record's patient (1991-04-12). None of its content is in this record.",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 7,
+   "cached": 87,
+   "input_tokens": 27719,
+   "output_tokens": 4491,
+   "cost_usd": 0.1374,
+   "full_cost_usd": 4.0474,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S07_other_patient_note": 2,
+    "plan": 1,
+    "answer": 1,
+    "check": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 54.3
+  }
+ },
+ {
+  "id": "S08",
+  "title": "Another organisation uses the same visit number HG-E115",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E115",
+     "field": "service",
+     "value": "individual"
+    },
+    "ok": true,
+    "got": {
+     "value": "individual",
+     "scenarios": [],
+     "status": "corroborated"
+    }
+   },
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E115",
+     "field": "minutes",
+     "scenarios": [
+      40,
+      50
+     ]
+    },
+    "ok": true,
+    "got": {
+     "value": null,
+     "scenarios": [
+      40.0,
+      50.0
+     ],
+     "status": "conflicting"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585,
+      595
+     ]
+    },
+    "ok": true,
+    "got": {
+     "sessions": 12,
+     "days": 11,
+     "minutes": [
+      585.0,
+      595.0
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S08-Q1",
+    "question": "What happened at encounter HG-E115 on January 26, 2026?",
+    "status": "answered",
+    "answer": "Encounter HG-E115 on January 26, 2026 was an individual psychotherapy session delivered in person, attended by the patient and counted as included toward the goal. Clinical notes document: ongoing anxiety, low mood, and functional difficulty around work demands; uneven sleep with repetitive work-related thoughts at night; difficulty moving from a supervisor's reply to scheduling a follow-up conversation; continued postponement of choosing a meeting time; worry about being asked for commitments; a tendency to over-edit messages; and anticipation of becoming overwhelmed if multiple work issues arose at once. No suicidal ideation was reported. The patient was attentive, collaborative, and expressed a wish to resume a steadier routine. Interventions included role-play to rehearse a brief, focused response to the supervisor's request (identifying when the patient shifted into apologizing or over-explaining), a grounding exercise using chair contact and feet on the floor, and rehearsal of requesting a brief initial conversation with a specific purpose. Nora Ellis participated directly in the clinical work and helped rehearse a grounding cue. The patient could use the grounding cue during rehearsal but remained uncertain about independent use when anxious; with prompting, the patient was able to return to the main request during role-play. Plan: continue work on avoidance and the bedtime routine, maintain scheduled treatment contact during return-to-work planning, and bring the response draft to the next visit if still stuck; continue individual and group work under the existing outpatient plan. The session duration is conflicting: one document records the patient-contact interval as 09:00\u201309:50 (50 minutes) and the other as 09:10\u201309:50 (40 minutes); both sources are of equal standing. The end time of 09:50 is agreed by both. Clinicians were Mira Patel, LCSW (primary record author) and Nora Ellis, LCSW (participating clinician record author). There is an unresolved conflict flag on this encounter: the two clinical records disagree on both the session start time (09:00 vs. 09:10) and the total duration (50 vs. 40 minutes). Additionally, a Northside Community Clinic nutrition consult note uses the same visit identifier HG-E115 for a separate dietitian appointment on the same date (15:00\u201315:30), which may indicate a visit-number collision across systems rather than a conflict within the behavioral health record.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "S08_other_clinic_same_visit_number was set aside: MRN NCC-55120 is not the record's patient (HG-M042). None of its content is in this record.",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 12,
+   "cached": 88,
+   "input_tokens": 55771,
+   "output_tokens": 8932,
+   "cost_usd": 0.2336,
+   "full_cost_usd": 4.1457,
+   "cached_seconds": 2370.1,
+   "by_stage": {
+    "extract:S08_other_clinic_same_visit_number": 2,
+    "sweep:S08_other_clinic_same_visit_number": 1,
+    "plan": 2,
+    "answer": 2,
+    "check": 2,
+    "absence": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 137.2
+  }
+ },
+ {
+  "id": "S09",
+  "title": "The signed treatment plan is withdrawn (no documented goal)",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E101",
+     "field": "disposition",
+     "value": "attended_no_goal"
+    },
+    "ok": true,
+    "got": {
+     "value": "attended_no_goal",
+     "scenarios": [],
+     "status": "established"
+    }
+   },
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E106",
+     "field": "disposition",
+     "value": "attended_no_goal"
+    },
+    "ok": true,
+    "got": {
+     "value": "attended_no_goal",
+     "scenarios": [],
+     "status": "established"
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S09-Q1",
+    "question": "Did Rowan meet the weekly therapy goal in the week of January 19 to 25?",
+    "status": "answered",
+    "answer": "Because no weekly therapy goal exists, goal status by threshold cannot be determined: there is no weekly threshold to measure against. The goal computation confirms no_goal for this week. No documented care goal specifies a weekly therapy session threshold for the week of January 19\u201325. The only active goal covering that period is an episode-level authorization permitting at most 8 outpatient therapeutic group sessions across the entire episode (January 5\u201330, 2026); it sets no weekly minimum or target and does not constitute a weekly therapy goal. The record does not document a weekly therapy goal for the week of January 19\u201325. Documentation of a care plan or treatment goal specifying eligible service types and a weekly session threshold would be needed to determine whether Rowan met such a goal.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 10,
+   "cached": 85,
+   "input_tokens": 56651,
+   "output_tokens": 3292,
+   "cost_usd": 0.1851,
+   "full_cost_usd": 3.9773,
+   "cached_seconds": 2298.4,
+   "by_stage": {
+    "plan": 2,
+    "answer": 2,
+    "check": 2,
+    "absence": 2,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 58.5
+  }
+ },
+ {
+  "id": "S10",
+  "title": "Plan amendment raises the weekly minute goal to 180 from 19 Jan (day-month dates)",
+  "checks": [
+   {
+    "check": {
+     "type": "week",
+     "start": "2026-01-12",
+     "status": "not_met"
+    },
+    "ok": true,
+    "got": {
+     "by_threshold": [
+      {
+       "threshold": "at least 3 days",
+       "measured": 2.0,
+       "outcome": "not_met"
+      },
+      {
+       "threshold": "at least 150 minutes",
+       "measured": 120.0,
+       "outcome": "not_met"
+      }
+     ],
+     "overall": "not_met",
+     "status": "not_met",
+     "checks": [
+      {
+       "unit": "minutes",
+       "outcome": "not_applicable",
+       "facts": [
+        "F-a588772a",
+        "F-d59a17cb",
+        "F-1600dce9",
+        "F-99136dc9",
+        "F-c5b7a1f5",
+        "F-42e5d845",
+        "F-f900b285",
+        "F-7b650890",
+        "F-f429bb96",
+        "F-73381349",
+        "F-3ee03464"
+       ]
+      },
+      {
+       "unit": "days",
+       "threshold": 3.0,
+       "comparator": "at_least",
+       "measured": 2.0,
+       "outcome": "not_met",
+       "covered": "2026-01-12..2026-01-18",
+       "partial_week": false,
+       "counted": [
+        "HG-E105",
+        "HG-E107"
+       ],
+       "facts": [
+        "F-9caa8013",
+        "F-bd5d2dc7",
+        "F-61aa9996",
+        "F-b0c32ec1",
+        "F-a04a4b12",
+        "F-12b53ed8",
+        "F-a496bd16",
+        "F-4f8ccef4",
+        "F-fc6415ee",
+        "F-5595cf7d"
+       ]
+      },
+      {
+       "unit": "minutes",
+       "threshold": 150.0,
+       "comparator": "at_least",
+       "measured": 120.0,
+       "outcome": "not_met",
+       "covered": "2026-01-12..2026-01-18",
+       "partial_week": false,
+       "counted": [
+        "HG-E105",
+        "HG-E107"
+       ],
+       "facts": [
+        "F-8366d374",
+        "F-d4d4d9ce",
+        "F-ef23c2d5",
+        "F-7c3ab780",
+        "F-77453ba4",
+        "F-432c0ae9",
+        "F-3c217ee3",
+        "F-f8fbe453",
+        "F-8e460404",
+        "F-000c5fd2",
+        "F-b53b8e00"
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "check": {
+     "type": "week",
+     "start": "2026-01-19",
+     "status": "met"
+    },
+    "ok": true,
+    "got": {
+     "by_threshold": [
+      {
+       "threshold": "at least 180 minutes",
+       "measured": 180.0,
+       "outcome": "met"
+      },
+      {
+       "threshold": "at least 3 days",
+       "measured": 3.0,
+       "outcome": "met"
+      }
+     ],
+     "overall": "met",
+     "status": "met",
+     "checks": [
+      {
+       "unit": "minutes",
+       "threshold": 180.0,
+       "comparator": "at_least",
+       "measured": 180.0,
+       "outcome": "met",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112",
+        "HG-E113"
+       ],
+       "facts": [
+        "F-a588772a",
+        "F-d59a17cb",
+        "F-1600dce9",
+        "F-99136dc9",
+        "F-c5b7a1f5",
+        "F-42e5d845",
+        "F-f900b285",
+        "F-7b650890",
+        "F-f429bb96",
+        "F-73381349",
+        "F-3ee03464"
+       ]
+      },
+      {
+       "unit": "days",
+       "threshold": 3.0,
+       "comparator": "at_least",
+       "measured": 3.0,
+       "outcome": "met",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112",
+        "HG-E113"
+       ],
+       "facts": [
+        "F-9caa8013",
+        "F-bd5d2dc7",
+        "F-61aa9996",
+        "F-b0c32ec1",
+        "F-a04a4b12",
+        "F-12b53ed8",
+        "F-a496bd16",
+        "F-4f8ccef4",
+        "F-fc6415ee",
+        "F-5595cf7d"
+       ]
+      },
+      {
+       "unit": "minutes",
+       "outcome": "not_applicable",
+       "facts": [
+        "F-8366d374",
+        "F-d4d4d9ce",
+        "F-ef23c2d5",
+        "F-7c3ab780",
+        "F-77453ba4",
+        "F-432c0ae9",
+        "F-3c217ee3",
+        "F-f8fbe453",
+        "F-8e460404",
+        "F-000c5fd2",
+        "F-b53b8e00"
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S10-Q1",
+    "question": "Using the treatment goals in effect in each week, was the weekly minute goal met in the week of January 19 to 25 and in the week of January 26 to February 1?",
+    "status": "answered",
+    "answer": "Week of January 19\u201325: the weekly minute goal (at least 150 minutes per the January 5 plan, which was in effect for this week) was met. The four attended, goal-eligible therapy sessions \u2014 group therapy on January 19 (HG-E110, 60 min), individual therapy on January 19 (HG-E111, 30 min), individual therapy on January 21 (HG-E112, 45 min), and group therapy on January 22 (HG-E113, 45 min) \u2014 totaled 180 minutes, meeting the at-least-150-minute threshold. The at-least-3-therapy-days threshold was also met (3 distinct days). Overall goal status: met. Week of January 26\u2013February 1: the weekly minute goal (at least 180 minutes per the January 19 amendment, which replaced the prior minute goal effective January 19) cannot be determined. The three attended, goal-eligible therapy sessions \u2014 individual therapy on January 26 (HG-E115, 40 or 50 minutes due to a conflicting start-time record), group therapy on January 29 (HG-E118, 75 min), and family therapy on January 30 (HG-E119, 30 min) \u2014 total either 145 or 155 minutes, both below 180. However, the review period ends January 30 and the week runs through February 1, so sessions on January 31 and February 1 are not in the record; the goal cannot be determined for this partial week. The at-least-3-therapy-days threshold was met (3 distinct days). The three excluded encounters in the week of January 26\u2013February 1 were correctly omitted from the goal-eligible count: HG-E116 (January 27, group therapy) was a no-show \u2014 the patient did not attend; HG-E117 (January 28, individual therapy) was cancelled by the patient before the appointment \u2014 the patient did not attend; HG-E120 (January 30, medication management) was attended but medication management is explicitly excluded from the minute goal by the treatment plan amendment.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 1,
+     "evidence": 2,
+     "missing_or_wrong": [
+      "Week of Jan 19\u201325: candidate states the 150-minute goal (Jan 5 plan) was in effect and met, but the amendment signed 19 Jan 2026 replaced the minute goal effective 19 Jan 2026, so the 180-minute goal was already in effect for that entire week; the correct conclusion is that 180 minutes were accumulated and the 180-minute goal was met \u2014 the candidate reaches the right 'met' outcome but for the wrong reason (citing the superseded 150-minute threshold)",
+      "Week of Jan 26\u2013Feb 1: candidate says goal 'cannot be determined' due to partial week, but the reference answer and evidence show the documented sessions (145 or 155 min) are already below 180 in both scenarios, so the minute goal is not met for the documented days; the partial-week caveat is valid but the candidate omits the clear finding that documented minutes fall short"
+     ]
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 15,
+   "cached": 87,
+   "input_tokens": 178472,
+   "output_tokens": 13099,
+   "cost_usd": 0.6198,
+   "full_cost_usd": 4.5298,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S10_plan_amendment_2026-01-19": 2,
+    "plan": 2,
+    "plan-retry": 1,
+    "answer": 2,
+    "check": 3,
+    "absence": 2,
+    "repair": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 179.2
+  }
+ },
+ {
+  "id": "S11",
+  "title": "Video session with a JSON platform log (seconds, ISO timestamps, dropped call)",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E123",
+     "field": "minutes",
+     "between": [
+      46,
+      48
+     ]
+    },
+    "ok": true,
+    "got": {
+     "value": 47.0,
+     "scenarios": [],
+     "status": "documented"
+    }
+   },
+   {
+    "check": {
+     "type": "total",
+     "sessions": 13,
+     "days": 11
+    },
+    "ok": true,
+    "got": {
+     "sessions": 13,
+     "days": 11,
+     "minutes": [
+      632.0,
+      642.0
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S11-Q1",
+    "question": "How many minutes of patient contact occurred in the January 29 video session, excluding the dropped connection?",
+    "status": "answered",
+    "answer": "The January 29 individual video session recorded 47 minutes of patient contact, with the dropped connection (a gap from approximately 15:18 to 15:21 during which there was no therapeutic contact) already excluded from that figure.",
+    "reasons": [],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 12,
+   "cached": 87,
+   "input_tokens": 29323,
+   "output_tokens": 11538,
+   "cost_usd": 0.2425,
+   "full_cost_usd": 4.1525,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S11_video_platform_log_2026-01-29": 2,
+    "sweep:S11_video_platform_log_2026-01-29": 2,
+    "reread:S11_video_platform_log_2026-01-29": 1,
+    "plan": 2,
+    "answer": 2,
+    "check": 2,
+    "scenario-grade": 1
+   },
+   "seconds": 140.3
+  }
+ },
+ {
+  "id": "S12",
+  "title": "Measures import with a re-imported form and a score after the review period",
+  "checks": [
+   {
+    "check": {
+     "type": "measurement",
+     "instrument": "PHQ-9",
+     "completed_on": "2026-02-02"
+    },
+    "ok": true,
+    "got": [
+     "M:PHQ-9 2026-02-02"
+    ]
+   }
+  ],
+  "answers": [
+   {
+    "id": "S12-Q1",
+    "question": "What was Rowan's latest PHQ-9 total within the January 5 to 30 review period, and how much did it change from intake?",
+    "status": "answered",
+    "answer": "Rowan's latest PHQ-9 total within the January 5\u201330 review period was 10, recorded on January 30, 2026. Compared to the intake (first) PHQ-9 score of 18 on January 5, the January 30 score of 10 represents a decrease of 8 points.",
+    "reasons": [],
+    "published": true,
+    "missing": [
+     "44\\.4"
+    ],
+    "forbidden": [],
+    "ok": false,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "PHQ-9 completed 2026-01-16 (score 14) is recorded under form IDs F-0116, HG-Q116; same instrument, date and score, so it is treated as one administration",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 8,
+   "cached": 87,
+   "input_tokens": 26890,
+   "output_tokens": 4992,
+   "cost_usd": 0.1342,
+   "full_cost_usd": 4.0442,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "extract:S12_phq9_after_review_period": 2,
+    "reread:S12_phq9_after_review_period": 1,
+    "plan": 1,
+    "answer": 1,
+    "check": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 63.8
+  }
+ },
+ {
+  "id": "S13",
+  "title": "Equal-standing note says the patient was a no-show for HG-E113",
+  "checks": [
+   {
+    "check": {
+     "type": "fact",
+     "subject": "HG-E113",
+     "field": "attendance",
+     "status": [
+      "conflicting"
+     ]
+    },
+    "ok": true,
+    "got": {
+     "value": null,
+     "scenarios": [
+      "not_attended",
+      "attended"
+     ],
+     "status": "conflicting"
+    }
+   },
+   {
+    "check": {
+     "type": "week",
+     "start": "2026-01-19",
+     "status": "cannot_determine"
+    },
+    "ok": true,
+    "got": {
+     "by_threshold": [
+      {
+       "threshold": "at least 3 days",
+       "measured": [
+        2.0,
+        3.0
+       ],
+       "outcome": "cannot_determine"
+      },
+      {
+       "threshold": "at least 150 minutes",
+       "measured": [
+        135.0,
+        180.0
+       ],
+       "outcome": "cannot_determine"
+      }
+     ],
+     "overall": "cannot_determine",
+     "status": "cannot_determine",
+     "checks": [
+      {
+       "unit": "days",
+       "threshold": 3.0,
+       "comparator": "at_least",
+       "measured": [
+        2.0,
+        3.0
+       ],
+       "outcome": "cannot_determine",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112"
+       ],
+       "attendance_uncertain": [
+        "HG-E113"
+       ],
+       "facts": [
+        "F-9caa8013",
+        "F-bd5d2dc7",
+        "F-61aa9996",
+        "F-b0c32ec1",
+        "F-a04a4b12",
+        "F-12b53ed8",
+        "F-a496bd16",
+        "F-4f8ccef4",
+        "F-fc6415ee",
+        "F-5595cf7d"
+       ]
+      },
+      {
+       "unit": "minutes",
+       "threshold": 150.0,
+       "comparator": "at_least",
+       "measured": [
+        135.0,
+        180.0
+       ],
+       "outcome": "cannot_determine",
+       "covered": "2026-01-19..2026-01-25",
+       "partial_week": false,
+       "counted": [
+        "HG-E110",
+        "HG-E111",
+        "HG-E112"
+       ],
+       "attendance_uncertain": [
+        "HG-E113"
+       ],
+       "facts": [
+        "F-8366d374",
+        "F-d4d4d9ce",
+        "F-ef23c2d5",
+        "F-7c3ab780",
+        "F-77453ba4",
+        "F-432c0ae9",
+        "F-3c217ee3",
+        "F-f8fbe453",
+        "F-8e460404",
+        "F-000c5fd2",
+        "F-b53b8e00"
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "answers": [
+   {
+    "id": "S13-Q1",
+    "question": "Did Rowan attend the January 22 skills group, and can the weekly goal for January 19 to 25 be judged?",
+    "status": "partial",
+    "answer": "Rowan's attendance at the January 22 skills group is disputed: the attendance register and the facilitator's session note record that Rowan arrived at 10:30 and remained until the group closed (attended, late arrival), while the co-facilitator's separate note states Rowan did not attend and no contact occurred. Sources of equal standing disagree, so attendance is either attended or not attended and cannot be resolved from the record as it stands. The weekly goal for January 19\u201325 cannot be judged. The three confirmed included encounters (January 19 group, January 19 individual, January 21 individual) cover 2 distinct therapy days and 135 minutes; if the January 22 encounter is also counted, the figures become 3 days and 180 minutes. Days threshold (at least 3): measured 2 or 3 \u2014 cannot determine. Minutes threshold (at least 150): measured 135 or 180 \u2014 cannot determine. Overall goal status: cannot be determined.",
+    "reasons": [
+     "part of the question not answered: Did Rowan attend the January 22 skills group?",
+     "part of the question not answered: If the weekly goal can be judged, was it met?",
+     "checklist item not addressed: Whether Rowan attended the January 22 skills group"
+    ],
+    "published": true,
+    "missing": [],
+    "forbidden": [],
+    "ok": true,
+    "judge": {
+     "factual": 2,
+     "evidence": 2,
+     "missing_or_wrong": []
+    }
+   }
+  ],
+  "open_items_added": [
+   "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15) may be the same event as HG-E109 (weighted match 0.7: date, service, issuer); kept separate",
+   "HG-E113 status: no_show or partial \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E113 attendance: not_attended or attended \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E113 disposition:  \u2014 attendance is not established",
+   "HG-E115 presence_start: 09:00 or 09:10 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 stated_minutes: 50.0 or 40.0 \u2014 Sources of equal standing disagree; every value is kept as a scenario.",
+   "HG-E115 minutes: 40.0 or 50.0 \u2014 Creditable minutes = each surviving account's presence minus its breaks and gaps; inputs: presence_start (conflicting), presence_end (corroborated)",
+   "HG-E115 session_minutes: 40.0 or 50.0 \u2014 Documented session time whoever was present (clinician, partner or patient), minus breaks and gaps; not the patient's creditable time."
+  ],
+  "usage": {
+   "calls": 10,
+   "cached": 88,
+   "input_tokens": 70738,
+   "output_tokens": 5471,
+   "cost_usd": 0.256,
+   "full_cost_usd": 4.1695,
+   "cached_seconds": 2370.6,
+   "by_stage": {
+    "extract:S13_facilitator_noshow_HG-E113": 2,
+    "plan": 1,
+    "answer": 1,
+    "check": 2,
+    "absence": 1,
+    "repair": 1,
+    "frame": 1,
+    "scenario-grade": 1
+   },
+   "seconds": 75.8
+  }
+ }
+]

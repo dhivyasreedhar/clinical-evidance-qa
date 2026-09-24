@@ -1,0 +1,19 @@
+{
+  "name": "clinical-evidence-workspace",
+  "private": true,
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web",
+    "typecheck": "npm run typecheck --workspace apps/web",
+    "test:browser": "playwright test",
+    "contracts": "openapi-typescript contracts/openapi.json -o apps/web/lib/api-schema.d.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "openapi-typescript": "7.13.0",
+    "prettier": "3.6.2"
+  }
+}

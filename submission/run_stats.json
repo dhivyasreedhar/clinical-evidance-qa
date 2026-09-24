@@ -1,0 +1,863 @@
+{
+ "questions": 65,
+ "timing": "partly cached",
+ "model_calls": 374,
+ "cached_calls": 2,
+ "this_run": {
+  "cost_usd": 12.5747,
+  "median_seconds": 42.1,
+  "max_seconds": 152.2
+ },
+ "cold": {
+  "cost_usd": 12.579,
+  "median_seconds": 42.1,
+  "max_seconds": 152.2
+ },
+ "per_question": [
+  {
+   "id": "DEV-01",
+   "status": "answered",
+   "calls": 9,
+   "this_run": {
+    "cost_usd": 0.6443,
+    "seconds": 152.2
+   },
+   "cold": {
+    "cost_usd": 0.6443,
+    "seconds": 152.2
+   }
+  },
+  {
+   "id": "DEV-02",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.2822,
+    "seconds": 115.8
+   },
+   "cold": {
+    "cost_usd": 0.2822,
+    "seconds": 115.8
+   }
+  },
+  {
+   "id": "DEV-03",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1303,
+    "seconds": 48.6
+   },
+   "cold": {
+    "cost_usd": 0.1303,
+    "seconds": 48.6
+   }
+  },
+  {
+   "id": "DEV-04",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1371,
+    "seconds": 72.2
+   },
+   "cold": {
+    "cost_usd": 0.1371,
+    "seconds": 72.2
+   }
+  },
+  {
+   "id": "DEV-05",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.2215,
+    "seconds": 68.1
+   },
+   "cold": {
+    "cost_usd": 0.2215,
+    "seconds": 68.1
+   }
+  },
+  {
+   "id": "DEV-06",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0513,
+    "seconds": 33.5
+   },
+   "cold": {
+    "cost_usd": 0.0513,
+    "seconds": 33.5
+   }
+  },
+  {
+   "id": "DEV-07",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0622,
+    "seconds": 28.9
+   },
+   "cold": {
+    "cost_usd": 0.0622,
+    "seconds": 28.9
+   }
+  },
+  {
+   "id": "DEV-08",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1187,
+    "seconds": 33.8
+   },
+   "cold": {
+    "cost_usd": 0.1187,
+    "seconds": 33.8
+   }
+  },
+  {
+   "id": "DEV-09",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0474,
+    "seconds": 28.6
+   },
+   "cold": {
+    "cost_usd": 0.0474,
+    "seconds": 28.6
+   }
+  },
+  {
+   "id": "DEV-10",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0607,
+    "seconds": 28.2
+   },
+   "cold": {
+    "cost_usd": 0.0607,
+    "seconds": 28.2
+   }
+  },
+  {
+   "id": "DEV-11",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0561,
+    "seconds": 29.6
+   },
+   "cold": {
+    "cost_usd": 0.0561,
+    "seconds": 29.6
+   }
+  },
+  {
+   "id": "DEV-12",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.1801,
+    "seconds": 62.9
+   },
+   "cold": {
+    "cost_usd": 0.1801,
+    "seconds": 62.9
+   }
+  },
+  {
+   "id": "DEV-13",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0621,
+    "seconds": 29.0
+   },
+   "cold": {
+    "cost_usd": 0.0621,
+    "seconds": 29.0
+   }
+  },
+  {
+   "id": "DEV-14",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.0977,
+    "seconds": 34.8
+   },
+   "cold": {
+    "cost_usd": 0.0977,
+    "seconds": 34.8
+   }
+  },
+  {
+   "id": "DEV-15",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.107,
+    "seconds": 73.2
+   },
+   "cold": {
+    "cost_usd": 0.107,
+    "seconds": 73.2
+   }
+  },
+  {
+   "id": "DEV-16",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.2193,
+    "seconds": 58.1
+   },
+   "cold": {
+    "cost_usd": 0.2213,
+    "seconds": 59.3
+   }
+  },
+  {
+   "id": "DEV-17",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.0897,
+    "seconds": 63.3
+   },
+   "cold": {
+    "cost_usd": 0.0897,
+    "seconds": 63.3
+   }
+  },
+  {
+   "id": "DEV-18",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1009,
+    "seconds": 28.5
+   },
+   "cold": {
+    "cost_usd": 0.1009,
+    "seconds": 28.5
+   }
+  },
+  {
+   "id": "DEV-19",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.1775,
+    "seconds": 70.2
+   },
+   "cold": {
+    "cost_usd": 0.1775,
+    "seconds": 70.2
+   }
+  },
+  {
+   "id": "DEV-20",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.1623,
+    "seconds": 63.8
+   },
+   "cold": {
+    "cost_usd": 0.1623,
+    "seconds": 63.8
+   }
+  },
+  {
+   "id": "DEV-21",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1063,
+    "seconds": 29.2
+   },
+   "cold": {
+    "cost_usd": 0.1063,
+    "seconds": 29.2
+   }
+  },
+  {
+   "id": "DEV-22",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.3043,
+    "seconds": 71.1
+   },
+   "cold": {
+    "cost_usd": 0.3043,
+    "seconds": 71.1
+   }
+  },
+  {
+   "id": "DEV-23",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.1496,
+    "seconds": 20.1
+   },
+   "cold": {
+    "cost_usd": 0.1496,
+    "seconds": 20.1
+   }
+  },
+  {
+   "id": "DEV-24",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.1353,
+    "seconds": 46.9
+   },
+   "cold": {
+    "cost_usd": 0.1353,
+    "seconds": 46.9
+   }
+  },
+  {
+   "id": "DEV-25",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0764,
+    "seconds": 24.9
+   },
+   "cold": {
+    "cost_usd": 0.0764,
+    "seconds": 24.9
+   }
+  },
+  {
+   "id": "DEV-26",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.4465,
+    "seconds": 65.6
+   },
+   "cold": {
+    "cost_usd": 0.4465,
+    "seconds": 65.6
+   }
+  },
+  {
+   "id": "DEV-27",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.3031,
+    "seconds": 54.0
+   },
+   "cold": {
+    "cost_usd": 0.3031,
+    "seconds": 54.0
+   }
+  },
+  {
+   "id": "DEV-28",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0913,
+    "seconds": 21.8
+   },
+   "cold": {
+    "cost_usd": 0.0913,
+    "seconds": 21.8
+   }
+  },
+  {
+   "id": "DEV-29",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1512,
+    "seconds": 29.0
+   },
+   "cold": {
+    "cost_usd": 0.1512,
+    "seconds": 29.0
+   }
+  },
+  {
+   "id": "DEV-30",
+   "status": "answered",
+   "calls": 12,
+   "this_run": {
+    "cost_usd": 0.3395,
+    "seconds": 98.2
+   },
+   "cold": {
+    "cost_usd": 0.3395,
+    "seconds": 98.2
+   }
+  },
+  {
+   "id": "DEV-31",
+   "status": "answered",
+   "calls": 9,
+   "this_run": {
+    "cost_usd": 0.3905,
+    "seconds": 122.7
+   },
+   "cold": {
+    "cost_usd": 0.3905,
+    "seconds": 122.7
+   }
+  },
+  {
+   "id": "DEV-32",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0657,
+    "seconds": 23.3
+   },
+   "cold": {
+    "cost_usd": 0.0657,
+    "seconds": 23.3
+   }
+  },
+  {
+   "id": "DEV-33",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.2864,
+    "seconds": 66.6
+   },
+   "cold": {
+    "cost_usd": 0.2864,
+    "seconds": 66.6
+   }
+  },
+  {
+   "id": "DEV-34",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0957,
+    "seconds": 24.7
+   },
+   "cold": {
+    "cost_usd": 0.0957,
+    "seconds": 24.7
+   }
+  },
+  {
+   "id": "DEV-35",
+   "status": "answered",
+   "calls": 9,
+   "this_run": {
+    "cost_usd": 0.3857,
+    "seconds": 95.8
+   },
+   "cold": {
+    "cost_usd": 0.3857,
+    "seconds": 95.8
+   }
+  },
+  {
+   "id": "DEV-36",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1514,
+    "seconds": 22.4
+   },
+   "cold": {
+    "cost_usd": 0.1514,
+    "seconds": 22.4
+   }
+  },
+  {
+   "id": "DEV-37",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1878,
+    "seconds": 36.0
+   },
+   "cold": {
+    "cost_usd": 0.1878,
+    "seconds": 36.0
+   }
+  },
+  {
+   "id": "DEV-38",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.089,
+    "seconds": 60.6
+   },
+   "cold": {
+    "cost_usd": 0.089,
+    "seconds": 60.6
+   }
+  },
+  {
+   "id": "DEV-39",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0358,
+    "seconds": 27.0
+   },
+   "cold": {
+    "cost_usd": 0.0358,
+    "seconds": 27.0
+   }
+  },
+  {
+   "id": "DEV-40",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.1809,
+    "seconds": 39.0
+   },
+   "cold": {
+    "cost_usd": 0.1809,
+    "seconds": 39.0
+   }
+  },
+  {
+   "id": "DEV-41",
+   "status": "answered",
+   "calls": 9,
+   "this_run": {
+    "cost_usd": 0.0863,
+    "seconds": 71.1
+   },
+   "cold": {
+    "cost_usd": 0.0863,
+    "seconds": 71.1
+   }
+  },
+  {
+   "id": "DEV-42",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.2604,
+    "seconds": 76.2
+   },
+   "cold": {
+    "cost_usd": 0.2604,
+    "seconds": 76.2
+   }
+  },
+  {
+   "id": "DEV-43",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.4345,
+    "seconds": 107.1
+   },
+   "cold": {
+    "cost_usd": 0.4345,
+    "seconds": 107.1
+   }
+  },
+  {
+   "id": "DEV-44",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0787,
+    "seconds": 29.7
+   },
+   "cold": {
+    "cost_usd": 0.0787,
+    "seconds": 29.7
+   }
+  },
+  {
+   "id": "DEV-45",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.2121,
+    "seconds": 66.9
+   },
+   "cold": {
+    "cost_usd": 0.2121,
+    "seconds": 66.9
+   }
+  },
+  {
+   "id": "DEV-46",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1713,
+    "seconds": 31.9
+   },
+   "cold": {
+    "cost_usd": 0.1713,
+    "seconds": 31.9
+   }
+  },
+  {
+   "id": "DEV-47",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.0815,
+    "seconds": 40.4
+   },
+   "cold": {
+    "cost_usd": 0.0815,
+    "seconds": 40.4
+   }
+  },
+  {
+   "id": "DEV-48",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.133,
+    "seconds": 37.5
+   },
+   "cold": {
+    "cost_usd": 0.133,
+    "seconds": 37.5
+   }
+  },
+  {
+   "id": "DEV-49",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.1603,
+    "seconds": 29.5
+   },
+   "cold": {
+    "cost_usd": 0.1603,
+    "seconds": 29.5
+   }
+  },
+  {
+   "id": "DEV-50",
+   "status": "partial",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.2011,
+    "seconds": 33.0
+   },
+   "cold": {
+    "cost_usd": 0.2011,
+    "seconds": 33.0
+   }
+  },
+  {
+   "id": "DEV-51",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.154,
+    "seconds": 44.6
+   },
+   "cold": {
+    "cost_usd": 0.154,
+    "seconds": 44.6
+   }
+  },
+  {
+   "id": "DEV-52",
+   "status": "partial",
+   "calls": 9,
+   "this_run": {
+    "cost_usd": 0.4982,
+    "seconds": 79.9
+   },
+   "cold": {
+    "cost_usd": 0.4982,
+    "seconds": 79.9
+   }
+  },
+  {
+   "id": "DEV-53",
+   "status": "answered",
+   "calls": 6,
+   "this_run": {
+    "cost_usd": 0.2039,
+    "seconds": 34.8
+   },
+   "cold": {
+    "cost_usd": 0.2039,
+    "seconds": 34.8
+   }
+  },
+  {
+   "id": "DEV-54",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.4675,
+    "seconds": 96.7
+   },
+   "cold": {
+    "cost_usd": 0.4675,
+    "seconds": 96.7
+   }
+  },
+  {
+   "id": "DEV-55",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.3285,
+    "seconds": 36.7
+   },
+   "cold": {
+    "cost_usd": 0.3285,
+    "seconds": 36.7
+   }
+  },
+  {
+   "id": "DEV-56",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.536,
+    "seconds": 42.1
+   },
+   "cold": {
+    "cost_usd": 0.536,
+    "seconds": 42.1
+   }
+  },
+  {
+   "id": "DEV-57",
+   "status": "answered",
+   "calls": 7,
+   "this_run": {
+    "cost_usd": 0.1576,
+    "seconds": 57.2
+   },
+   "cold": {
+    "cost_usd": 0.1576,
+    "seconds": 57.2
+   }
+  },
+  {
+   "id": "DEV-58",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.183,
+    "seconds": 42.4
+   },
+   "cold": {
+    "cost_usd": 0.183,
+    "seconds": 42.4
+   }
+  },
+  {
+   "id": "DEV-59",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.1749,
+    "seconds": 35.8
+   },
+   "cold": {
+    "cost_usd": 0.1749,
+    "seconds": 35.8
+   }
+  },
+  {
+   "id": "DEV-60",
+   "status": "answered",
+   "calls": 8,
+   "this_run": {
+    "cost_usd": 0.2478,
+    "seconds": 61.3
+   },
+   "cold": {
+    "cost_usd": 0.2501,
+    "seconds": 63.6
+   }
+  },
+  {
+   "id": "DEV-61",
+   "status": "answered",
+   "calls": 4,
+   "this_run": {
+    "cost_usd": 0.182,
+    "seconds": 41.6
+   },
+   "cold": {
+    "cost_usd": 0.182,
+    "seconds": 41.6
+   }
+  },
+  {
+   "id": "DEV-62",
+   "status": "answered",
+   "calls": 9,
+   "this_run": {
+    "cost_usd": 0.3586,
+    "seconds": 105.7
+   },
+   "cold": {
+    "cost_usd": 0.3586,
+    "seconds": 105.7
+   }
+  },
+  {
+   "id": "DEV-63",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.0531,
+    "seconds": 28.5
+   },
+   "cold": {
+    "cost_usd": 0.0531,
+    "seconds": 28.5
+   }
+  },
+  {
+   "id": "DEV-64",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.059,
+    "seconds": 34.3
+   },
+   "cold": {
+    "cost_usd": 0.059,
+    "seconds": 34.3
+   }
+  },
+  {
+   "id": "DEV-65",
+   "status": "answered",
+   "calls": 5,
+   "this_run": {
+    "cost_usd": 0.1706,
+    "seconds": 43.3
+   },
+   "cold": {
+    "cost_usd": 0.1706,
+    "seconds": 43.3
+   }
+  }
+ ]
+}

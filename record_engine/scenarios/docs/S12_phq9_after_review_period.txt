@@ -1,0 +1,10 @@
+HARBOR GROVE BEHAVIORAL HEALTH
+Patient-reported measures import | received 02/03/2026
+Rowan Mercer | DOB 1991-04-12 | MRN HG-M042
+
+Instrument | Form ID | Completed  | Total score
+PHQ-9      | F-0116  | 2026-01-16 | 14
+PHQ-9      | F-0202  | 2026-02-02 | 8
+
+Row 1 re-imports the January 16 form already in the chart. Row 2 was completed by the patient on
+February 2, 2026, after the review period.

@@ -1,0 +1,16 @@
+From: Leah Chen, LCSW <lchen@harborgrove.example>
+To: Health Information Management
+Date: Mon, 26 Jan 2026 09:14
+Subject: CORRECTION - 1/22 skills group attendance (Enc HG-E113), pt Rowan Mercer, MRN HG-M042
+
+HIM team,
+
+Please correct the attendance for encounter HG-E113 (skills group, Thursday 1/22/2026).
+The register row showing Rowan Mercer arriving 10:30 and staying until 11:30 was entered in
+error: it belongs to a different group member. Rowan did NOT attend the 1/22 group. There was no
+patient contact for Rowan on 1/22.
+
+Correction applies to the attendance and arrival/departure fields for Rowan on HG-E113 only.
+
+Leah Chen, LCSW
+Electronically signed 01/26/2026 09:14

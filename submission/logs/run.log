@@ -1,0 +1,84 @@
+# Execution log of the submitted run
+# Engine record-engine-0.3, policy-2. Models: claude-sonnet-4-6 (extract, plan, answer, repair,
+# benchmark judge), claude-haiku-4-5-20251001 (answer review, framing, absence checks). Temperature 0 except the
+# independent second reading of each document (temperature 1).
+# Commands (equivalent to make evaluate and make heldout):
+#   python -m record_engine observe --out submission          # extraction with cross-check
+#   python -m record_engine build   --out submission          # reconcile (code only)
+#   python -m record_engine ask --questions clinical_qa_benchmark/questions.json --gate DEV-01..05 --out submission
+#   python -m record_engine.evaluate grade|score|stability ...
+#   python -m record_engine ask --questions record_engine/heldout/questions.json ...; python -m record_engine.heldout.grade ...
+# "calls" are model calls made in this run; "cached" were served from the model-output cache;
+# "full_cost_usd" is the cost with nothing cached. Extraction was served from the cache of the
+# earlier cold extraction run (full cost $3.92).
+
+== observe
+{"documents": 31, "observations": 338, "issues": 26, "unextracted_mentions": 2, "reading_disagreements": 40, "settled_by_reread": 30, "left_open": 10, "seconds": 8.5, "usage": {"calls": 1, "cached": 87, "input_tokens": 1095, "output_tokens": 408, "cost_usd": 0.0094, "full_cost_usd": 3.9194, "cached_seconds": 2368.0, "by_stage": {"reread:group_cancellation_notice_jan15": 1}}}
+== build
+{"events": 297, "facts": 1632, "open_items": 31}
+== ask
+{"usage": {"calls": 374, "cached": 2, "input_tokens": 3895254, "output_tokens": 226091, "cost_usd": 12.5749, "full_cost_usd": 12.5792, "cached_seconds": 3.5, "by_stage": {"plan": 87, "answer": 87, "check": 96, "frame": 65, "absence": 26, "repair": 8, "plan-retry": 5}}, "seconds": 884.2}
+== grade
+{"method": "model-assisted-unadjudicated, one candidate per question", "questions": 65, "published": 65, "factual_mean": 1.831, "factual_points": "119/130", "evidence_mean": 1.923}
+== score
+{
+  "scorer": "record-engine-evaluate-1",
+  "tokenization": "lower-alnum-v1",
+  "citation_units": "document blocks (blank-line paragraphs and table rows)",
+  "interval": "95% question-level bootstrap, exploratory (single patient)",
+  "questions": 65,
+  "statuses": {
+    "answered": 63,
+    "partial": 2
+  },
+  "citation_macro": {
+    "precision": 0.707,
+    "recall": 0.532,
+    "f1": 0.563
+  },
+  "citation_micro": {
+    "tp": 497,
+    "fp": 317,
+    "fn": 673,
+    "precision": 0.611,
+    "recall": 0.425,
+    "f1": 0.501
+  },
+  "citation_f1_ci": [
+    0.518,
+    0.606
+  ],
+  "exact_calculations": "4/4",
+  "structured_fields": {
+    "matched": 55,
+    "scored": 55,
+    "mismatched": [],
+    "unscored": []
+  },
+  "lexical_secondary": {
+    "bleu4_corpus": 0.0516,
+    "bleu4_sentence": 0.0673,
+    "rouge1_f1": 0.3486,
+    "rouge2_f1": 0.1271,
+    "rougeL_f1": 0.2251
+  },
+  "judge": {
+    "graded": 65,
+    "factual_points": "119/130",
+    "factual_mean": 1.831,
+    "factual_ci": [
+      1.723,
+      1.923
+    ],
+    "evidence_mean": 1.923,
+    "published_and_factual_2": 55
+  }
+}
+== stability
+{"ledger_identical": true, "events_only_in_first": ["unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22"], "events_only_in_second": ["unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)", "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23"], "facts_compared": 402, "facts_differing": 22, "second_run": {"crosscheck": {"documents": 31, "disagreements": 26, "documents_reread": 10, "rereads_rejected": [{"doc": "BH-D106_telehealth_2026-01-21", "invented": ["HG-E112 interval.attestation"]}, {"doc": "early_appointment_status_export", "invented": ["HG-E103 contact.attestation", "HG-E103 contact.evidence_kind", "HG-E103 contact.service", "HG-E103 contact.status_claim"]}], "settled": 22, "open": 4, "points": [{"event": "D:imported_measure_summary_received_jan26", "doc": "imported_measure_summary_received_jan26", "field": "doc_meta.document_id", "a": ["bhd014"], "b": ["bhd014", "hgmeas0126"], "outcome": "settled"}, {"event": "D:imported_measure_summary_received_jan26", "doc": "imported_measure_summary_received_jan26", "field": "doc_meta.relation", "a": ["copy_of"], "b": [], "outcome": "settled"}, {"event": "HG-E102", "doc": "early_group_attendance_roster", "field": "contact.service", "a": ["group"], "b": [], "outcome": "settled"}, {"event": "HG-E102", "doc": "group_facilitator_jan06", "field": "contact.patient_present", "a": [], "b": ["yes"], "outcome": "settled"}, {"event": "HG-E103", "doc": "missed_visit_outreach_jan08", "field": "contact.patient_present", "a": ["no"], "b": ["no", "yes"], "outcome": "settled"}, {"event": "HG-E103", "doc": "missed_visit_outreach_jan08", "field": "contact.service", "a": ["individual"], "b": ["administrative", "individual", "uncategorised"], "outcome": "settled"}, {"event": "HG-E103", "doc": "missed_visit_outreach_jan08", "field": "contact.status_claim", "a": ["no_show"], "b": ["attended", "no_show", "not_present"], "outcome": "settled"}, {"event": "HG-E105", "doc": "early_group_attendance_roster", "field": "contact.service", "a": ["group"], "b": [], "outcome": "settled"}, {"event": "HG-E112", "doc": "BH-D106_telehealth_2026-01-21", "field": "interval.evidence_kind", "a": ["actual", "reported"], "b": ["actual"], "outcome": "open"}, {"event": "HG-E112", "doc": "BH-D106_telehealth_2026-01-21", "field": "interval.relation", "a": ["addendum"], "b": [], "outcome": "open"}, {"event": "HG-E113", "doc": "BH-D107_group_activity_records_2026-01-22_and_29", "field": "contact.status_claim", "a": ["unknown"], "b": [], "outcome": "settled"}, {"event": "HG-E113", "doc": "BH-D108_final_attendance_and_cancellation_register", "field": "contact.patient_present", "a": [], "b": ["yes"], "outcome": "settled"}, {"event": "HG-E117", "doc": "BH-D108_final_attendance_and_cancellation_register", "field": "contact.attestation", "a": ["signed"], "b": ["unsigned"], "outcome": "settled"}, {"event": "HG-E118", "doc": "BH-D107_group_activity_records_2026-01-22_and_29", "field": "contact.status_claim", "a": ["unknown"], "b": [], "outcome": "settled"}, {"event": "HG-E119", "doc": "BH-D113_family_therapy_2026-01-30", "field": "interval.stated_minutes", "a": ["30"], "b": ["30", "45"], "outcome": "settled"}, {"event": "patient", "doc": "imported_measure_summary_received_jan26", "field": "doc_meta.relation", "a": ["copy_of"], "b": [], "outcome": "settled"}, {"event": "HG-E104", "doc": "missed_visit_outreach_jan08", "field": "event", "a": ["HG-E104"], "b": ["unnumbered family contact on 2026-01-09 (missed_visit_outreach_jan08)"], "outcome": "settled"}, {"event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15)", "doc": "group_cancellation_notice_jan15", "field": "event", "a": ["unnumbered administrative contact on an undated day (group_cancellation_notice_jan15)"], "b": ["unnumbered administrative contact on 2026-01-15 (group_cancellation_notice_jan15)"], "outcome": "settled"}, {"event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15)", "doc": "group_cancellation_notice_jan15", "field": "contact.date", "a": [], "b": ["2026-01-15"], "outcome": "settled"}, {"event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22", "doc": "group_cancellation_notice_jan15", "field": "event", "a": ["unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22"], "b": ["unnumbered administrative contact on 2026-01-15 (group_cancellation_notice_jan15) #11"], "outcome": "open"}, {"event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22", "doc": "group_cancellation_notice_jan15", "field": "contact.date", "a": [], "b": ["2026-01-15"], "outcome": "settled"}, {"event": "unnumbered administrative contact on an undated day (missed_visit_outreach_jan08)", "doc": "missed_visit_outreach_jan08", "field": "event", "a": ["recorded"], "b": ["not recorded"], "outcome": "settled"}, {"event": "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15)", "doc": "group_cancellation_notice_jan15", "field": "event", "a": ["recorded"], "b": ["not recorded"], "outcome": "settled"}, {"event": "unnumbered phone call contact on an undated day (missed_visit_outreach_jan08)", "doc": "missed_visit_outreach_jan08", "field": "event", "a": ["recorded"], "b": ["not recorded"], "outcome": "settled"}, {"event": "HG-E103-outreach", "doc": "early_appointment_status_export", "field": "event", "a": ["not recorded"], "b": ["recorded"], "outcome": "open"}, {"event": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)", "doc": "BH-D108_final_attendance_and_cancellation_register", "field": "event", "a": ["not recorded"], "b": ["recorded"], "outcome": "settled"}]}, "usage": {"calls": 1, "cached": 85, "input_tokens": 1485, "output_tokens": 1469, "cost_usd": 0.0265, "full_cost_usd": 3.8402, "cached_seconds": 2315.7, "by_stage": {"reread:group_cancellation_notice_jan15": 1}}}}
+== heldout
+{"usage": {"calls": 79, "cached": 0, "input_tokens": 668377, "output_tokens": 32656, "cost_usd": 2.1208, "full_cost_usd": 2.1208, "cached_seconds": 0.0, "by_stage": {"plan": 19, "answer": 19, "check": 21, "absence": 5, "frame": 13, "repair": 2}}, "seconds": 137.7}
+{"method": "model-assisted-unadjudicated, one candidate, author-written references", "questions": 15, "published": 15, "factual_mean": 1.733, "factual_points": "26/30", "evidence_mean": 1.6}
+
+== heldout regrade (grader given the same evidence as the development judge)
+{"method": "model-assisted-unadjudicated, one candidate, author-written references", "questions": 15, "published": 15, "factual_mean": 1.8, "factual_points": "27/30", "evidence_mean": 1.867}

@@ -1,0 +1,643 @@
+[
+  {
+    "document_id": "BH-D001",
+    "filename": "group_authorization_letter.txt",
+    "line_count": 15,
+    "sha256": "d2240979a2de7d7782a34a6ca26e289ee829d01eea9932e4d61b3588c724ceb1",
+    "question_ids": [
+      "DEV-01",
+      "DEV-23",
+      "DEV-30"
+    ]
+  },
+  {
+    "document_id": "BH-D002",
+    "filename": "intake_and_individual_jan05.txt",
+    "line_count": 19,
+    "sha256": "7f5f7d4bbfc9b47a632fb33cca1b261999078d058cbd7601c63f6c6e5be3c747",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-05",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-38",
+      "DEV-39",
+      "DEV-41",
+      "DEV-42",
+      "DEV-43",
+      "DEV-45",
+      "DEV-46",
+      "DEV-49",
+      "DEV-52",
+      "DEV-54",
+      "DEV-56",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D003",
+    "filename": "signed_treatment_plan_jan05.txt",
+    "line_count": 20,
+    "sha256": "3b3f50db40b348bdd9e3baeb64b67a11d5edaf12699954762bec9633ad79ad12",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-12",
+      "DEV-19",
+      "DEV-20",
+      "DEV-21",
+      "DEV-24",
+      "DEV-28",
+      "DEV-33",
+      "DEV-34",
+      "DEV-35",
+      "DEV-36",
+      "DEV-37",
+      "DEV-52",
+      "DEV-60",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D004",
+    "filename": "group_facilitator_jan06.txt",
+    "line_count": 14,
+    "sha256": "5edddc6b20937ecdadf834b331c399375d0889d12a8595eb4084f1da2d4f4a11",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-06",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-31",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-43",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D005",
+    "filename": "early_group_attendance_roster.txt",
+    "line_count": 17,
+    "sha256": "6f205f89f8d3dbd05094e647925bb3c5955f11e9fb44f255f8cdedc3edb49616",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-06",
+      "DEV-07",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-31",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-57",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D006",
+    "filename": "early_appointment_status_export.txt",
+    "line_count": 20,
+    "sha256": "0bf056f3769e7daf39941514e6f3e1c40c99cbc00dbb4228ee0fac07d9f75f96",
+    "question_ids": [
+      "DEV-16",
+      "DEV-17",
+      "DEV-19",
+      "DEV-29",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D007",
+    "filename": "family_primary_jan09.txt",
+    "line_count": 18,
+    "sha256": "924dee06b05c0a841c3f86d0c394c7af39447db6c9ea7b643cc6eb3a3c40df6b",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-13",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-33",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-48",
+      "DEV-55",
+      "DEV-61",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D008",
+    "filename": "family_cofacilitator_jan09.txt",
+    "line_count": 15,
+    "sha256": "ad416fbda80683308baa15c433c7d1df7fe9221b9e8baf1f2189964bc0421aed",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-13",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-33",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-48",
+      "DEV-55",
+      "DEV-58",
+      "DEV-61",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D009",
+    "filename": "group_facilitator_jan12.txt",
+    "line_count": 16,
+    "sha256": "d30d18d0335d5d428acea2e5ee0334fbbafc10665133a462061a01c94baa09b7",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-07",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-31",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D010",
+    "filename": "medication_review_jan13.txt",
+    "line_count": 17,
+    "sha256": "95debafd3a72e32fd806d7aa4b420b1984f9c565d2af3c0d807269ee71aa8482",
+    "question_ids": [
+      "DEV-01",
+      "DEV-21",
+      "DEV-50",
+      "DEV-52",
+      "DEV-54",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D011",
+    "filename": "individual_therapy_jan14.txt",
+    "line_count": 17,
+    "sha256": "8c2fbaf5bb4545cc4590b288d768ab893a4d727f6946bcc88339669d0629eb8a",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-42",
+      "DEV-43",
+      "DEV-45",
+      "DEV-46",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D012",
+    "filename": "partner_collateral_jan16.txt",
+    "line_count": 17,
+    "sha256": "432c973d1a4d505b49ba85c3c92dead5c2a70faca6b6dd66e87db92b95329fea",
+    "question_ids": [
+      "DEV-01",
+      "DEV-19",
+      "DEV-29",
+      "DEV-33",
+      "DEV-47",
+      "DEV-56",
+      "DEV-62"
+    ]
+  },
+  {
+    "document_id": "BH-D013",
+    "filename": "symptom_measure_review_jan16.txt",
+    "line_count": 15,
+    "sha256": "300a30dbe42be8dcfdf7ad644f23c583259611467ae32e944e8d7154c78b968e",
+    "question_ids": [
+      "DEV-01",
+      "DEV-05",
+      "DEV-22",
+      "DEV-38",
+      "DEV-39",
+      "DEV-40",
+      "DEV-41",
+      "DEV-42",
+      "DEV-47",
+      "DEV-54",
+      "DEV-61"
+    ]
+  },
+  {
+    "document_id": "BH-D014",
+    "filename": "imported_measure_summary_received_jan26.txt",
+    "line_count": 19,
+    "sha256": "85e2c780abded9efe663fd61ac6e6a7a56e5b30c9597b24f35f90076b6f7358b",
+    "question_ids": [
+      "DEV-01",
+      "DEV-05",
+      "DEV-25",
+      "DEV-38",
+      "DEV-40",
+      "DEV-58",
+      "DEV-61",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D015",
+    "filename": "missed_visit_outreach_jan08.txt",
+    "line_count": 17,
+    "sha256": "4521a120a4d7a8f896d5fe9137a44f72719adc5cadbd839ef1b9d9646316b7c4",
+    "question_ids": [
+      "DEV-01",
+      "DEV-16",
+      "DEV-29",
+      "DEV-46",
+      "DEV-64"
+    ]
+  },
+  {
+    "document_id": "BH-D016",
+    "filename": "group_cancellation_notice_jan15.txt",
+    "line_count": 15,
+    "sha256": "5f3375f11c857ad3e9917ad2eefffffd5ee0412e6ab56885901c1b5d5b2115f9",
+    "question_ids": [
+      "DEV-01",
+      "DEV-17",
+      "DEV-29",
+      "DEV-64"
+    ]
+  },
+  {
+    "document_id": "BH-D101",
+    "filename": "BH-D101_group_content_2026-01-19.txt",
+    "line_count": 14,
+    "sha256": "05a234a8adc98e72a51ba9e82c13e5975ee5026f03bb03e66575015b22562fb6",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-04",
+      "DEV-05",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-31",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-44",
+      "DEV-55",
+      "DEV-61"
+    ]
+  },
+  {
+    "document_id": "BH-D102",
+    "filename": "BH-D102_original_attendance_2026-01-19.txt",
+    "line_count": 19,
+    "sha256": "514ca20809f682607e91b924c6cef0bb22f43a3d12cedbd23ea5fa362910cce5",
+    "question_ids": [
+      "DEV-04",
+      "DEV-08",
+      "DEV-61"
+    ]
+  },
+  {
+    "document_id": "BH-D103",
+    "filename": "BH-D103_attendance_correction_2026-01-20.txt",
+    "line_count": 16,
+    "sha256": "674440968b5d6d38d68b8b513cc7ac3b3516ddd97285bde1e4af69cb9f128bd9",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-04",
+      "DEV-08",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-31",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-59",
+      "DEV-61"
+    ]
+  },
+  {
+    "document_id": "BH-D104",
+    "filename": "BH-D104_resent_roster_received_2026-01-26.txt",
+    "line_count": 20,
+    "sha256": "f3f25065559f4e82b110b5c284df5c2c4f81c55c950721e7bd6a9c23a91241d5",
+    "question_ids": [
+      "DEV-01",
+      "DEV-04",
+      "DEV-08",
+      "DEV-25",
+      "DEV-58",
+      "DEV-59",
+      "DEV-61",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D105",
+    "filename": "BH-D105_individual_2026-01-19.txt",
+    "line_count": 15,
+    "sha256": "91fd8e8b1b3182207971dbecd77e3d2bd13e5f49608f4083e4a9245b8a2d8935",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-04",
+      "DEV-05",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-43",
+      "DEV-44",
+      "DEV-45",
+      "DEV-49",
+      "DEV-55"
+    ]
+  },
+  {
+    "document_id": "BH-D106",
+    "filename": "BH-D106_telehealth_2026-01-21.txt",
+    "line_count": 20,
+    "sha256": "09c946a2248a5a81b2c1dc85b7620babe57b72f1bd4bed3d49eba574be5ccd46",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-04",
+      "DEV-09",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-32",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-43",
+      "DEV-45",
+      "DEV-46",
+      "DEV-49",
+      "DEV-53",
+      "DEV-61"
+    ]
+  },
+  {
+    "document_id": "BH-D107",
+    "filename": "BH-D107_group_activity_records_2026-01-22_and_29.txt",
+    "line_count": 17,
+    "sha256": "c5953bcb242ef0143301019cf06964a4b759d432e26dc0e34f0ad1c2b819df70",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-10",
+      "DEV-11",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-31",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-43",
+      "DEV-53",
+      "DEV-57",
+      "DEV-60",
+      "DEV-61",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D108",
+    "filename": "BH-D108_final_attendance_and_cancellation_register.txt",
+    "line_count": 22,
+    "sha256": "805b2c69c7fa18ab31b618b4a313c39dcdbde570cc0890de2dfd52d77ca547e1",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-10",
+      "DEV-11",
+      "DEV-15",
+      "DEV-18",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-29",
+      "DEV-30",
+      "DEV-31",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-57",
+      "DEV-60",
+      "DEV-61",
+      "DEV-63",
+      "DEV-64",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D109",
+    "filename": "BH-D109_care_coordination_2026-01-23.txt",
+    "line_count": 15,
+    "sha256": "069ea4112779b68e7ba7bc9d06a73a6ad6dbb8110d7a1e7dfd3307769c6305be",
+    "question_ids": [
+      "DEV-01",
+      "DEV-20",
+      "DEV-27",
+      "DEV-53"
+    ]
+  },
+  {
+    "document_id": "BH-D110",
+    "filename": "BH-D110_individual_primary_record_2026-01-26.txt",
+    "line_count": 16,
+    "sha256": "4b64c46a13b80c09ec46d1cbb7b577dbfe8027cb62366631c15efa8ec1a1f58b",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-05",
+      "DEV-14",
+      "DEV-25",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-42",
+      "DEV-43",
+      "DEV-45",
+      "DEV-46",
+      "DEV-49",
+      "DEV-53",
+      "DEV-55",
+      "DEV-56",
+      "DEV-59",
+      "DEV-60",
+      "DEV-61",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D111",
+    "filename": "BH-D111_individual_second_record_2026-01-26.txt",
+    "line_count": 17,
+    "sha256": "d03451942797c3fb189a5083c80950887657a79d0d1da9bb7f74bda8731d9380",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-14",
+      "DEV-25",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-45",
+      "DEV-52",
+      "DEV-55",
+      "DEV-59",
+      "DEV-60",
+      "DEV-61",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D112",
+    "filename": "BH-D112_draft_note_and_charge_extract_2026-01-27.txt",
+    "line_count": 27,
+    "sha256": "b4390ed6b672381f671aae23dbfa937d9c5585ca4b6db83cd811797e2a34505f",
+    "question_ids": [
+      "DEV-01",
+      "DEV-15",
+      "DEV-30",
+      "DEV-61",
+      "DEV-63",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D113",
+    "filename": "BH-D113_family_therapy_2026-01-30.txt",
+    "line_count": 15,
+    "sha256": "36764827bcb39caf2e9304c881f55e4acba9744a9792228bf36981f19a0feaf9",
+    "question_ids": [
+      "DEV-01",
+      "DEV-02",
+      "DEV-03",
+      "DEV-12",
+      "DEV-24",
+      "DEV-26",
+      "DEV-27",
+      "DEV-28",
+      "DEV-30",
+      "DEV-33",
+      "DEV-34",
+      "DEV-35",
+      "DEV-37",
+      "DEV-48",
+      "DEV-56",
+      "DEV-60",
+      "DEV-65"
+    ]
+  },
+  {
+    "document_id": "BH-D114",
+    "filename": "BH-D114_medication_management_2026-01-30.txt",
+    "line_count": 15,
+    "sha256": "9942bd886fcd2158bbd56914551519397d70eef7103b6d33ba2fa90cc424093c",
+    "question_ids": [
+      "DEV-01",
+      "DEV-21",
+      "DEV-24",
+      "DEV-42",
+      "DEV-46",
+      "DEV-49",
+      "DEV-50",
+      "DEV-51",
+      "DEV-54",
+      "DEV-55"
+    ]
+  },
+  {
+    "document_id": "BH-D115",
+    "filename": "BH-D115_symptom_measure_review_2026-01-30.txt",
+    "line_count": 16,
+    "sha256": "4a3859fd81fc5afc5533e9add8718ce4b89492121bf68f812f73db92d319755e",
+    "question_ids": [
+      "DEV-01",
+      "DEV-05",
+      "DEV-22",
+      "DEV-24",
+      "DEV-38",
+      "DEV-39",
+      "DEV-41",
+      "DEV-42",
+      "DEV-43",
+      "DEV-46",
+      "DEV-49",
+      "DEV-52",
+      "DEV-53",
+      "DEV-54"
+    ]
+  }
+]

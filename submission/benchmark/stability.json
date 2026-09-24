@@ -1,0 +1,578 @@
+{
+ "ledger_identical": true,
+ "ledger": null,
+ "events_only_in_first": [
+  "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22"
+ ],
+ "events_only_in_second": [
+  "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+  "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23"
+ ],
+ "facts_compared": 402,
+ "facts_differing": 22,
+ "differences": [
+  {
+   "subject": "HG-E109",
+   "field": "status",
+   "first": [
+    "corroborated",
+    "[\"not_present\"]"
+   ],
+   "second": [
+    "established",
+    "[\"not_present\"]"
+   ]
+  },
+  {
+   "subject": "HG-E113",
+   "field": "attendance",
+   "first": [
+    "corroborated",
+    "[\"attended\"]"
+   ],
+   "second": [
+    "documented",
+    "[\"attended\"]"
+   ]
+  },
+  {
+   "subject": "HG-E113",
+   "field": "status",
+   "first": [
+    "corroborated",
+    "[\"partial\"]"
+   ],
+   "second": [
+    "documented",
+    "[\"partial\"]"
+   ]
+  },
+  {
+   "subject": "HG-E118",
+   "field": "attendance",
+   "first": [
+    "corroborated",
+    "[\"attended\"]"
+   ],
+   "second": [
+    "documented",
+    "[\"attended\"]"
+   ]
+  },
+  {
+   "subject": "HG-E118",
+   "field": "status",
+   "first": [
+    "corroborated",
+    "[\"attended\"]"
+   ],
+   "second": [
+    "documented",
+    "[\"attended\"]"
+   ]
+  },
+  {
+   "subject": "M:PHQ-9 2026-01-16",
+   "field": "completed_on",
+   "first": [
+    "documented",
+    "[\"2026-01-16\"]"
+   ],
+   "second": [
+    "corroborated",
+    "[\"2026-01-16\"]"
+   ]
+  },
+  {
+   "subject": "M:PHQ-9 2026-01-16",
+   "field": "form_id",
+   "first": [
+    "documented",
+    "[\"HG-Q116\"]"
+   ],
+   "second": [
+    "corroborated",
+    "[\"HG-Q116\"]"
+   ]
+  },
+  {
+   "subject": "M:PHQ-9 2026-01-16",
+   "field": "instrument",
+   "first": [
+    "documented",
+    "[\"PHQ-9\"]"
+   ],
+   "second": [
+    "corroborated",
+    "[\"PHQ-9\"]"
+   ]
+  },
+  {
+   "subject": "M:PHQ-9 2026-01-16",
+   "field": "score",
+   "first": [
+    "documented",
+    "[14.0]"
+   ],
+   "second": [
+    "corroborated",
+    "[14.0]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+   "field": "attendance",
+   "first": null,
+   "second": [
+    "documented",
+    "[\"not_attended\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+   "field": "date",
+   "first": null,
+   "second": [
+    "documented",
+    "[\"2026-01-27\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+   "field": "disposition",
+   "first": null,
+   "second": [
+    "established",
+    "[\"not_care\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+   "field": "service",
+   "first": null,
+   "second": [
+    "documented",
+    "[\"administrative\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+   "field": "status",
+   "first": null,
+   "second": [
+    "documented",
+    "[\"not_present\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22",
+   "field": "attendance",
+   "first": [
+    "documented",
+    "[\"attended\"]"
+   ],
+   "second": null
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22",
+   "field": "disposition",
+   "first": [
+    "established",
+    "[\"not_care\"]"
+   ],
+   "second": null
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22",
+   "field": "service",
+   "first": [
+    "documented",
+    "[\"administrative\"]"
+   ],
+   "second": null
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22",
+   "field": "status",
+   "first": [
+    "documented",
+    "[\"attended\"]"
+   ],
+   "second": null
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23",
+   "field": "attendance",
+   "first": null,
+   "second": [
+    "documented",
+    "[\"attended\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23",
+   "field": "disposition",
+   "first": null,
+   "second": [
+    "established",
+    "[\"not_care\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23",
+   "field": "service",
+   "first": null,
+   "second": [
+    "documented",
+    "[\"administrative\"]"
+   ]
+  },
+  {
+   "subject": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23",
+   "field": "status",
+   "first": null,
+   "second": [
+    "documented",
+    "[\"attended\"]"
+   ]
+  }
+ ],
+ "second_run": {
+  "crosscheck": {
+   "documents": 31,
+   "disagreements": 26,
+   "documents_reread": 10,
+   "rereads_rejected": [
+    {
+     "doc": "BH-D106_telehealth_2026-01-21",
+     "invented": [
+      "HG-E112 interval.attestation"
+     ]
+    },
+    {
+     "doc": "early_appointment_status_export",
+     "invented": [
+      "HG-E103 contact.attestation",
+      "HG-E103 contact.evidence_kind",
+      "HG-E103 contact.service",
+      "HG-E103 contact.status_claim"
+     ]
+    }
+   ],
+   "settled": 22,
+   "open": 4,
+   "points": [
+    {
+     "event": "D:imported_measure_summary_received_jan26",
+     "doc": "imported_measure_summary_received_jan26",
+     "field": "doc_meta.document_id",
+     "a": [
+      "bhd014"
+     ],
+     "b": [
+      "bhd014",
+      "hgmeas0126"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "D:imported_measure_summary_received_jan26",
+     "doc": "imported_measure_summary_received_jan26",
+     "field": "doc_meta.relation",
+     "a": [
+      "copy_of"
+     ],
+     "b": [],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E102",
+     "doc": "early_group_attendance_roster",
+     "field": "contact.service",
+     "a": [
+      "group"
+     ],
+     "b": [],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E102",
+     "doc": "group_facilitator_jan06",
+     "field": "contact.patient_present",
+     "a": [],
+     "b": [
+      "yes"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E103",
+     "doc": "missed_visit_outreach_jan08",
+     "field": "contact.patient_present",
+     "a": [
+      "no"
+     ],
+     "b": [
+      "no",
+      "yes"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E103",
+     "doc": "missed_visit_outreach_jan08",
+     "field": "contact.service",
+     "a": [
+      "individual"
+     ],
+     "b": [
+      "administrative",
+      "individual",
+      "uncategorised"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E103",
+     "doc": "missed_visit_outreach_jan08",
+     "field": "contact.status_claim",
+     "a": [
+      "no_show"
+     ],
+     "b": [
+      "attended",
+      "no_show",
+      "not_present"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E105",
+     "doc": "early_group_attendance_roster",
+     "field": "contact.service",
+     "a": [
+      "group"
+     ],
+     "b": [],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E112",
+     "doc": "BH-D106_telehealth_2026-01-21",
+     "field": "interval.evidence_kind",
+     "a": [
+      "actual",
+      "reported"
+     ],
+     "b": [
+      "actual"
+     ],
+     "outcome": "open"
+    },
+    {
+     "event": "HG-E112",
+     "doc": "BH-D106_telehealth_2026-01-21",
+     "field": "interval.relation",
+     "a": [
+      "addendum"
+     ],
+     "b": [],
+     "outcome": "open"
+    },
+    {
+     "event": "HG-E113",
+     "doc": "BH-D107_group_activity_records_2026-01-22_and_29",
+     "field": "contact.status_claim",
+     "a": [
+      "unknown"
+     ],
+     "b": [],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E113",
+     "doc": "BH-D108_final_attendance_and_cancellation_register",
+     "field": "contact.patient_present",
+     "a": [],
+     "b": [
+      "yes"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E117",
+     "doc": "BH-D108_final_attendance_and_cancellation_register",
+     "field": "contact.attestation",
+     "a": [
+      "signed"
+     ],
+     "b": [
+      "unsigned"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E118",
+     "doc": "BH-D107_group_activity_records_2026-01-22_and_29",
+     "field": "contact.status_claim",
+     "a": [
+      "unknown"
+     ],
+     "b": [],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E119",
+     "doc": "BH-D113_family_therapy_2026-01-30",
+     "field": "interval.stated_minutes",
+     "a": [
+      "30"
+     ],
+     "b": [
+      "30",
+      "45"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "patient",
+     "doc": "imported_measure_summary_received_jan26",
+     "field": "doc_meta.relation",
+     "a": [
+      "copy_of"
+     ],
+     "b": [],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E104",
+     "doc": "missed_visit_outreach_jan08",
+     "field": "event",
+     "a": [
+      "HG-E104"
+     ],
+     "b": [
+      "unnumbered family contact on 2026-01-09 (missed_visit_outreach_jan08)"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15)",
+     "doc": "group_cancellation_notice_jan15",
+     "field": "event",
+     "a": [
+      "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15)"
+     ],
+     "b": [
+      "unnumbered administrative contact on 2026-01-15 (group_cancellation_notice_jan15)"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15)",
+     "doc": "group_cancellation_notice_jan15",
+     "field": "contact.date",
+     "a": [],
+     "b": [
+      "2026-01-15"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22",
+     "doc": "group_cancellation_notice_jan15",
+     "field": "event",
+     "a": [
+      "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22"
+     ],
+     "b": [
+      "unnumbered administrative contact on 2026-01-15 (group_cancellation_notice_jan15) #11"
+     ],
+     "outcome": "open"
+    },
+    {
+     "event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #22",
+     "doc": "group_cancellation_notice_jan15",
+     "field": "contact.date",
+     "a": [],
+     "b": [
+      "2026-01-15"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "unnumbered administrative contact on an undated day (missed_visit_outreach_jan08)",
+     "doc": "missed_visit_outreach_jan08",
+     "field": "event",
+     "a": [
+      "recorded"
+     ],
+     "b": [
+      "not recorded"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "unnumbered family contact on 2026-01-16 (group_cancellation_notice_jan15)",
+     "doc": "group_cancellation_notice_jan15",
+     "field": "event",
+     "a": [
+      "recorded"
+     ],
+     "b": [
+      "not recorded"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "unnumbered phone call contact on an undated day (missed_visit_outreach_jan08)",
+     "doc": "missed_visit_outreach_jan08",
+     "field": "event",
+     "a": [
+      "recorded"
+     ],
+     "b": [
+      "not recorded"
+     ],
+     "outcome": "settled"
+    },
+    {
+     "event": "HG-E103-outreach",
+     "doc": "early_appointment_status_export",
+     "field": "event",
+     "a": [
+      "not recorded"
+     ],
+     "b": [
+      "recorded"
+     ],
+     "outcome": "open"
+    },
+    {
+     "event": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+     "doc": "BH-D108_final_attendance_and_cancellation_register",
+     "field": "event",
+     "a": [
+      "not recorded"
+     ],
+     "b": [
+      "recorded"
+     ],
+     "outcome": "settled"
+    }
+   ]
+  },
+  "usage": {
+   "calls": 1,
+   "cached": 85,
+   "input_tokens": 1485,
+   "output_tokens": 1469,
+   "cost_usd": 0.0265,
+   "full_cost_usd": 3.8402,
+   "cached_seconds": 2315.7,
+   "by_stage": {
+    "reread:group_cancellation_notice_jan15": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "method": "model-assisted-unadjudicated, one candidate, author-written references",
+ "questions": 15,
+ "published": 15,
+ "factual_mean": 1.8,
+ "factual_points": "27/30",
+ "evidence_mean": 1.867,
+ "grades": [
+  {
+   "id": "HO-01",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-02",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-03",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 1,
+   "missing_or_wrong": [
+    "Incorrectly identifies January 23 care coordination (HG-E114) as a non-delivered scheduled appointment; the reference answer and documentary evidence identify only two non-delivered appointments (Jan 27 and Jan 28). HG-E114 was a clinician-to-clinician coordination call, not a scheduled patient appointment that was missed or cancelled."
+   ]
+  },
+  {
+   "id": "HO-04",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-05",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Concludes only 40 minutes total, omitting the 15-minute partner-only segment of the January 30 session; correct total is 55 minutes",
+    "Incorrectly characterises the Jan 30 partner-only segment as 'not separately counted' when the question asks about all time the clinician spent with the partner while Rowan was absent, regardless of session type"
+   ]
+  },
+  {
+   "id": "HO-06",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "States skills group ran 10:00\u201311:15 with 60 creditable minutes, but does not note the corrected departure time of 11:15 (vs. original 11:30) as a correction; the 60-minute figure is plausible but the answer presents it as settled without flagging the correction document",
+    "Incorrectly states the individual session (HG-E111) was with Mira Patel, LCSW \u2014 the group facilitator was Leah Chen, LCSW; the individual clinician is Mira Patel, so that part is correct, but the group clinician is misattributed in the narrative as 'Leah Chen' which is actually correct \u2014 no error there",
+    "Does not explicitly note that the January 30 questionnaire review (BH-D115) is not a separate appointment, which the reference answer flags as a required clarification",
+    "Minor: claims group ran 10:00\u201311:15 yielding '60 creditable minutes' \u2014 with a 15-min break (10:45\u201311:00) subtracted from 75 min total, that is 60 min, which is correct"
+   ]
+  },
+  {
+   "id": "HO-07",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 1,
+   "missing_or_wrong": [
+    "Cited evidence does not include the January 21 telehealth note (BH-D106) details establishing the 45-minute contact and the disconnection exclusion; only a partial quote from that document is cited, omitting the key passage about the 13:00\u201313:20 / 13:30\u201313:55 contact and the 10-minute gap exclusion"
+   ]
+  },
+  {
+   "id": "HO-08",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-09",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-10",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-11",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-12",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-13",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-14",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "HO-15",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  }
+ ]
+}

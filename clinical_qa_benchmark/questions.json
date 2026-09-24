@@ -1,0 +1,262 @@
+[
+  {
+    "id": "DEV-01",
+    "question": "For January 5–30, 2026, how many therapy sessions did Rowan attend, by service type and in total, and on how many distinct days? Provide a reviewable abstraction with source support and explain records that could lead to duplicate or ineligible counts."
+  },
+  {
+    "id": "DEV-02",
+    "question": "How many therapy minutes and hours did Rowan actually receive during the review period, overall and for each Monday–Sunday week? Show calculations or supporting detail, and report any conclusion the available documents do not settle."
+  },
+  {
+    "id": "DEV-03",
+    "question": "For each week, did the delivered therapy meet the goal documented in Rowan’s treatment plan? State the goal, the relevant therapy-day and minute totals, and whether it was met, not met, or cannot be determined from the current record."
+  },
+  {
+    "id": "DEV-04",
+    "question": "Reconstruct the care on January 19 and January 21. How many therapy contacts and patient therapy minutes occurred on each date, and how do the attendance records, clinical notes, later documents, and telehealth records affect your answer?"
+  },
+  {
+    "id": "DEV-05",
+    "question": "Summarize the documented symptom course during the episode and the reason for the additional individual contact on January 19. Which symptom assessments are distinct, and what conclusions about progress can and cannot be supported?"
+  },
+  {
+    "id": "DEV-06",
+    "question": "How many psychotherapy minutes did Rowan receive in the January 6 group, and how do the attendance roster and facilitator note jointly support the calculation?"
+  },
+  {
+    "id": "DEV-07",
+    "question": "The January 12 roster says Rowan attended the full group. How much patient therapy time should be credited, and why?"
+  },
+  {
+    "id": "DEV-08",
+    "question": "Which January 19 group departure time should be used after considering all versions of the attendance record, and what makes that version authoritative for this field?"
+  },
+  {
+    "id": "DEV-09",
+    "question": "The January 21 video export contains two call IDs. How many therapy sessions should an encounter-level abstraction contain, and how much contact time?"
+  },
+  {
+    "id": "DEV-10",
+    "question": "Calculate Rowan’s eligible group minutes on January 22. Does participation after the break establish attendance at the beginning of the group?"
+  },
+  {
+    "id": "DEV-11",
+    "question": "How many therapy minutes should be assigned to the January 29 group, and which records are needed to establish them?"
+  },
+  {
+    "id": "DEV-12",
+    "question": "How much of the January 30 family appointment contributes to Rowan’s treatment-plan minute goal? Explain the difference from the therapist’s session duration."
+  },
+  {
+    "id": "DEV-13",
+    "question": "Do the two family notes signed on January 9 and January 10 represent separate visits? State the service date, encounter count, and patient therapy minutes."
+  },
+  {
+    "id": "DEV-14",
+    "question": "Reconcile the January 26 individual psychotherapy records. What can be concluded with certainty, and what remains unresolved about duration?"
+  },
+  {
+    "id": "DEV-15",
+    "question": "A January 27 draft says Rowan attended group and a group charge is posted. Did Rowan receive group psychotherapy that day? Explain the evidence conflict."
+  },
+  {
+    "id": "DEV-16",
+    "question": "What happened to the January 8 individual appointment and follow-up call, and how should each affect therapy counts and minutes?"
+  },
+  {
+    "id": "DEV-17",
+    "question": "Why was the January 15 group not delivered, and is it accurate to describe this as a patient no-show or a refusal of therapy?"
+  },
+  {
+    "id": "DEV-18",
+    "question": "What is the final disposition of the January 28 individual appointment, including the stated reason and any replacement within January?"
+  },
+  {
+    "id": "DEV-19",
+    "question": "Does the completed January 16 family collateral contact count toward Rowan’s patient-present therapy goal? Describe who participated and the treatment-time implication."
+  },
+  {
+    "id": "DEV-20",
+    "question": "How should the January 23 care-coordination call be represented when counting Rowan’s therapy, and did it change treatment frequency or medication?"
+  },
+  {
+    "id": "DEV-21",
+    "question": "Which medication visits occurred during the episode, how much time did they take, and how much of that time is eligible for the psychotherapy goal?"
+  },
+  {
+    "id": "DEV-22",
+    "question": "Do the January 16 and January 30 questionnaire-review entries establish additional therapy sessions or durations?"
+  },
+  {
+    "id": "DEV-23",
+    "question": "What does the group authorization establish about service type, dates, and quantity, and what does it not establish about delivered treatment?"
+  },
+  {
+    "id": "DEV-24",
+    "question": "For January 30, report the number of patient-attended clinical visits, the total documented patient-contact minutes across those visits, and the psychotherapy minutes and therapy-day count."
+  },
+  {
+    "id": "DEV-25",
+    "question": "Several documents were received or signed around January 26. Which establish a new January 26 therapy encounter, and which describe earlier services or assessments?"
+  },
+  {
+    "id": "DEV-26",
+    "question": "Across January 5–30, how many patient-present therapy minutes belong to individual, group, and family therapy? Include uncertainty only where the records require it."
+  },
+  {
+    "id": "DEV-27",
+    "question": "Compare therapy participation in January 5–18 with January 19–30 by sessions, distinct days, and minutes. What changed numerically, without attributing a cause?"
+  },
+  {
+    "id": "DEV-28",
+    "question": "Why are the total number of attended therapy encounters and the number of therapy days different in this episode? Identify the date responsible."
+  },
+  {
+    "id": "DEV-29",
+    "question": "List the scheduled therapy appointments that were not delivered during January 5–30, distinguishing no-shows, clinic cancellation, and patient cancellation."
+  },
+  {
+    "id": "DEV-30",
+    "question": "How does the number of attended groups compare with the authorized quantity, and can the remaining billable authorization balance be determined from these documents?"
+  },
+  {
+    "id": "DEV-31",
+    "question": "For the five attended groups, reconcile booked time, actual time present, nontherapeutic breaks, and delivered patient therapy minutes."
+  },
+  {
+    "id": "DEV-32",
+    "question": "A summary assigns 55 minutes to the January 21 video visit because it spans 13:00–13:55. Is that abstraction supported? Provide the corrected calculation."
+  },
+  {
+    "id": "DEV-33",
+    "question": "Across the January 9 family visit, January 16 collateral contact, and January 30 family visit, how much documented clinician session time involved family or partner work, and how much qualifies as Rowan’s patient-present family therapy?"
+  },
+  {
+    "id": "DEV-34",
+    "question": "Provide the distinct dates on which Rowan actually received eligible psychotherapy, grouped into Monday–Sunday weeks."
+  },
+  {
+    "id": "DEV-35",
+    "question": "For each week, quantify any shortfall against the treatment plan’s therapy-day and minute thresholds. Preserve unresolved alternatives."
+  },
+  {
+    "id": "DEV-36",
+    "question": "Is the three-days/150-minutes weekly threshold a universal clinical or insurance standard in this record, and which services does it include?"
+  },
+  {
+    "id": "DEV-37",
+    "question": "Which episode-level conclusions change under the two January 26 duration scenarios, and which remain unchanged?"
+  },
+  {
+    "id": "DEV-38",
+    "question": "List the distinct PHQ-9 assessments by actual completion date and score, identifying any duplicated measurement documentation."
+  },
+  {
+    "id": "DEV-39",
+    "question": "What are the absolute and percentage changes in PHQ-9 from intake to the final assessment? Show the denominator and avoid inferring functional recovery from the calculation."
+  },
+  {
+    "id": "DEV-40",
+    "question": "What was Rowan’s newly completed PHQ-9 score on January 26, and how did it compare with January 16?"
+  },
+  {
+    "id": "DEV-41",
+    "question": "What item-level PHQ-9 information is available, and can item 9 be compared across all three assessments?"
+  },
+  {
+    "id": "DEV-42",
+    "question": "By January 30, what evidence supports improvement and what evidence limits a conclusion of recovery? Integrate symptoms with functioning."
+  },
+  {
+    "id": "DEV-43",
+    "question": "Trace Rowan’s work-communication progress from early January through January 30. Distinguish a planned action, drafting, sending, and completed follow-up."
+  },
+  {
+    "id": "DEV-44",
+    "question": "What prompted the additional individual therapy contact on January 19, what was done, and what immediate response was documented?"
+  },
+  {
+    "id": "DEV-45",
+    "question": "Identify the recurring psychotherapy strategies used for avoidance and task initiation, with examples from different dates. What evidence distinguishes rehearsal from independent follow-through?"
+  },
+  {
+    "id": "DEV-46",
+    "question": "Summarize the course of sleep difficulty during the episode. Does the record support saying that sleep normalized by the final week?"
+  },
+  {
+    "id": "DEV-47",
+    "question": "Which January 16 observations came from Casey, and which came from Rowan’s own questionnaire update? Why does that distinction matter?"
+  },
+  {
+    "id": "DEV-48",
+    "question": "What family communication plan was developed on January 9, and how was that theme revisited on January 30? Does the later note prove the issue was already resolved?"
+  },
+  {
+    "id": "DEV-49",
+    "question": "What safety-related findings are explicitly documented, and what would be too strong a conclusion about risk across the entire episode?"
+  },
+  {
+    "id": "DEV-50",
+    "question": "What medication, dose, and dosing schedule was Rowan taking, and can those details be reconstructed from the medication-management notes?"
+  },
+  {
+    "id": "DEV-51",
+    "question": "Was medication changed on January 30, and what did Rowan report about adherence and new adverse effects?"
+  },
+  {
+    "id": "DEV-52",
+    "question": "Which formal psychiatric diagnosis and diagnostic code are established by these documents? Distinguish clinical symptom descriptions from a coded diagnosis."
+  },
+  {
+    "id": "DEV-53",
+    "question": "On what date did Rowan return to work, and what work schedule or employment clearance had been approved by the end of the episode?"
+  },
+  {
+    "id": "DEV-54",
+    "question": "Can the documents establish whether psychotherapy or medication caused the PHQ-9 improvement, or which treatment was more effective?"
+  },
+  {
+    "id": "DEV-55",
+    "question": "Identify the documented clinicians for January 9 family therapy, January 19 therapy, January 26 individual therapy, and January 30 medication management. Do multiple clinicians imply additional patient sessions?"
+  },
+  {
+    "id": "DEV-56",
+    "question": "Do the early-January and later-January records refer to the same patient despite changes in clinician names? Identify the chart identifiers supporting the match."
+  },
+  {
+    "id": "DEV-57",
+    "question": "What reasons are documented for Rowan’s partial group attendance on January 6 and late arrival on January 22? Can the same explanation be assigned to both dates?"
+  },
+  {
+    "id": "DEV-58",
+    "question": "Give three examples in which a signature, receipt, or import date differs from the underlying service or assessment date. Explain the effect on date-based counts."
+  },
+  {
+    "id": "DEV-59",
+    "question": "A reviewer resolves all discrepancies by selecting the latest received or latest signed document. Would that rule produce defensible answers for January 19 and January 26?"
+  },
+  {
+    "id": "DEV-60",
+    "question": "Can the final Monday–Sunday week be reported as a complete observed week through February 1? Explain the review-period boundary and the strongest supported weekly conclusion."
+  },
+  {
+    "id": "DEV-61",
+    "question": "Which record pairs or groups should be linked as documentation of the same underlying event rather than counted as separate events? Include both encounters and symptom measurements."
+  },
+  {
+    "id": "DEV-62",
+    "question": "Would the appointment-status export alone support an accurate therapy-minute total for January 5–16? Identify what additional evidence is necessary."
+  },
+  {
+    "id": "DEV-63",
+    "question": "Does the January 27 charge extract establish that a payer paid for the session, that the charge was reversed, or which psychotherapy billing code was used?"
+  },
+  {
+    "id": "DEV-64",
+    "question": "What reasons are known for each January 8, 15, 27 and 28 undelivered appointment, and which reason remains undocumented?"
+  },
+  {
+    "id": "DEV-65",
+    "question": "What targeted clarification would settle the unresolved January 26 time and the resulting final-week goal status? Which already available administrative records would not resolve it?"
+  }
+]

@@ -1,0 +1,138 @@
+[
+ {
+  "id": "HO-01",
+  "reference_answer": "Two sessions on two days: the January 12 coping skills group (HG-E105), 10:00–11:30 less the 10:40–10:55 break = 75 minutes, and the January 14 individual session (HG-E107), 45 minutes. Total 120 minutes on 2 therapy days. The goal (at least 3 therapy days and 150 minutes) was not met on either threshold. The January 13 medication visit does not count, the January 15 group was cancelled by the clinic, and Rowan was absent from the January 16 collateral contact.",
+  "sources": [
+   "group_facilitator_jan12:L6",
+   "group_facilitator_jan12:L12",
+   "early_group_attendance_roster:L11",
+   "individual_therapy_jan14:L7",
+   "signed_treatment_plan_jan05:L12",
+   "group_cancellation_notice_jan15:L9",
+   "partner_collateral_jan16:L8"
+  ]
+ },
+ {
+  "id": "HO-02",
+  "reference_answer": "The most recent PHQ-9 was completed January 30, 2026: total 10. The January 16 score was 14. It fell 4 points, 28.6% (4 / 14).",
+  "sources": [
+   "BH-D115_symptom_measure_review_2026-01-30:L5-6",
+   "symptom_measure_review_jan16:L7-8"
+  ]
+ },
+ {
+  "id": "HO-03",
+  "reference_answer": "Two: the January 27 skills group (HG-E116) was a no-show — Rowan did not attend and no reason is documented (an outreach message was left). The January 28 individual appointment (HG-E117) was cancelled by the patient at 08:12 that morning for a personal scheduling conflict; no replacement was booked in January. The draft note and posted charge for January 27 do not show attendance.",
+  "sources": [
+   "BH-D108_final_attendance_and_cancellation_register:L10-11",
+   "BH-D108_final_attendance_and_cancellation_register:L16",
+   "BH-D108_final_attendance_and_cancellation_register:L18"
+  ]
+ },
+ {
+  "id": "HO-04",
+  "reference_answer": "Mira Patel, LCSW, and Daniel Shaw, an outside social worker; Rowan did not participate. It ran 09:00–09:20 (20 minutes). It was care coordination between professionals, so it does not count toward therapy minutes or days; no change to medication or psychotherapy frequency was made.",
+  "sources": [
+   "BH-D109_care_coordination_2026-01-23:L3-7",
+   "BH-D109_care_coordination_2026-01-23:L11",
+   "BH-D109_care_coordination_2026-01-23:L13",
+   "signed_treatment_plan_jan05:L12"
+  ]
+ },
+ {
+  "id": "HO-05",
+  "reference_answer": "55 minutes: the January 16 collateral contact with Casey (14:00–14:40, 40 minutes, Rowan absent throughout) and the partner-only portion of the January 30 family session (13:00–13:15, 15 minutes).",
+  "sources": [
+   "partner_collateral_jan16:L6-8",
+   "BH-D113_family_therapy_2026-01-30:L6-7"
+  ]
+ },
+ {
+  "id": "HO-06",
+  "reference_answer": "January 19: skills group (HG-E110) and an added individual session (HG-E111, 11:15–11:45). January 30: family psychotherapy (HG-E119, Rowan present 13:15–13:45) and medication management (HG-E120, 15:00–15:20). The January 30 questionnaire review is not a separate appointment.",
+  "sources": [
+   "BH-D101_group_content_2026-01-19:L3-4",
+   "BH-D105_individual_2026-01-19:L3-6",
+   "BH-D113_family_therapy_2026-01-30:L3-7",
+   "BH-D114_medication_management_2026-01-30:L3-5",
+   "BH-D115_symptom_measure_review_2026-01-30:L14"
+  ]
+ },
+ {
+  "id": "HO-07",
+  "reference_answer": "75 minutes in 2 sessions: January 19 in person (HG-E111), 30 minutes, and January 21 video (HG-E112), 45 minutes after excluding the 13:20–13:30 disconnection.",
+  "sources": [
+   "BH-D105_individual_2026-01-19:L6",
+   "BH-D106_telehealth_2026-01-21:L7"
+  ]
+ },
+ {
+  "id": "HO-08",
+  "reference_answer": "The facilitator demonstrated paced breathing. Rowan practiced a breathing exercise and chose reading the delayed work message before deciding how to respond as a possible next step.",
+  "sources": [
+   "group_facilitator_jan06:L10",
+   "group_facilitator_jan06:L14"
+  ]
+ },
+ {
+  "id": "HO-09",
+  "reference_answer": "Prepared and signed by Mara Voss, LCSW, on 2026-01-05 at 13:05; patient agreement recorded 2026-01-05 at 13:12.",
+  "sources": [
+   "signed_treatment_plan_jan05:L7-8"
+  ]
+ },
+ {
+  "id": "HO-10",
+  "reference_answer": "12 days: 11 psychotherapy days (January 5, 6, 9, 12, 14, 19, 21, 22, 26, 29, 30) plus January 13, when the only service was medication management. January 30 also had medication management but is already a therapy day.",
+  "sources": [
+   "early_appointment_status_export:L10-18",
+   "medication_review_jan13:L6-7",
+   "BH-D108_final_attendance_and_cancellation_register:L9-12"
+  ]
+ },
+ {
+  "id": "HO-11",
+  "reference_answer": "180 minutes across three groups: January 19 (HG-E110) 60 minutes (10:00–11:15 after the departure correction, less the 10:45–11:00 break), January 22 (HG-E113) 45 minutes, and January 29 (HG-E118) 75 minutes. January 22 contributed the fewest because Rowan arrived late at 10:30 (then the 10:45–11:00 break is excluded). The January 27 group was a no-show.",
+  "sources": [
+   "BH-D103_attendance_correction_2026-01-20:L7",
+   "BH-D101_group_content_2026-01-19:L6",
+   "BH-D108_final_attendance_and_cancellation_register:L9-12",
+   "BH-D107_group_activity_records_2026-01-22_and_29:L8",
+   "BH-D107_group_activity_records_2026-01-22_and_29:L13"
+  ]
+ },
+ {
+  "id": "HO-12",
+  "reference_answer": "Yes: Leena Park, LPC, the cofacilitator, wrote an accompanying entry for the same encounter HG-E104, signed 2026-01-10 at 08:42. It documents the same visit, not a second one.",
+  "sources": [
+   "family_cofacilitator_jan09:L6-9",
+   "family_primary_jan09:L8"
+  ]
+ },
+ {
+  "id": "HO-13",
+  "reference_answer": "No. The intake records only the PHQ-9 total (18). An item 9 score is documented only for January 30 (item 9: 0).",
+  "sources": [
+   "intake_and_individual_jan05:L15",
+   "BH-D115_symptom_measure_review_2026-01-30:L6"
+  ]
+ },
+ {
+  "id": "HO-14",
+  "reference_answer": "None. Neither participant made an employment determination; the call clarified roles, and the outside social worker would provide contact information and help with employer forms if Rowan asked.",
+  "sources": [
+   "BH-D109_care_coordination_2026-01-23:L9",
+   "BH-D109_care_coordination_2026-01-23:L11"
+  ]
+ },
+ {
+  "id": "HO-15",
+  "reference_answer": "None: the corrected departure from the group was 11:15, and the individual session began at 11:15, with Rowan coming directly from the group room. The original roster's 11:30 departure was corrected.",
+  "sources": [
+   "BH-D103_attendance_correction_2026-01-20:L7",
+   "BH-D103_attendance_correction_2026-01-20:L9",
+   "BH-D105_individual_2026-01-19:L6",
+   "BH-D105_individual_2026-01-19:L9"
+  ]
+ }
+]

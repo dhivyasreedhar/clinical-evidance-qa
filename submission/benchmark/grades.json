@@ -1,0 +1,515 @@
+{
+ "method": "model-assisted-unadjudicated, one candidate per question",
+ "questions": 65,
+ "published": 65,
+ "factual_mean": 1.831,
+ "factual_points": "119/130",
+ "evidence_mean": 1.923,
+ "grades": [
+  {
+   "id": "DEV-01",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Includes medication visits in a 'total attended visits' count (14 across 12 days) that conflates therapy and non-therapy contacts, which is not asked for and could mislead; the question asks only about therapy sessions.",
+    "Does not explicitly address the January 8 no-show, January 15 clinic cancellation, January 28 patient cancellation, January 16 partner-only collateral, January 23 professional coordination, questionnaire reviews/imports, resent roster, and authorization/charge/template records as exclusions \u2014 these are required exclusion explanations per the required facts.",
+    "Does not note that January 27 posted charge and draft do not outweigh the signed no-show attestation (required fact).",
+    "January 21 two video call segments are not explicitly identified as one encounter (required deduplication fact).",
+    "Uncertainty about January 13 prescriber name (calls them 'Elias Brenner NP' \u2014 minor but not a material error)."
+   ]
+  },
+  {
+   "id": "DEV-02",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-03",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-04",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-05",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Does not identify the January 26 import as a duplicate of the January 16 form (a required fact); instead treats January 26 only as the date Rowan sent a message, never clarifying the measurement-tab duplication issue.",
+    "Clinician on January 19 is named as 'Mira Patel, LCSW' from the document header, but the reference answer attributes the visit to the treating clinician (Mara Voss); minor but the candidate uses the document name without flagging any discrepancy.",
+    "Introduces a 'January 13' mood observation and 'January 14' individual therapy session details (affect more varied) that go beyond the required facts and reference answer scope without noting these are not distinct PHQ-9 assessments\u2014acceptable but the January 26 duplicate omission is the material gap."
+   ]
+  },
+  {
+   "id": "DEV-06",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-07",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-08",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-09",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-10",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-11",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-12",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-13",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-14",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-15",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-16",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-17",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-18",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-19",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Introduces week-total calculation (120 minutes, 30 short of 150) that is not part of the required facts or reference answer, and relies on other appointment data not supplied in the question scope \u2014 this is extraneous and potentially misleading material beyond what was asked."
+   ]
+  },
+  {
+   "id": "DEV-20",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-21",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-22",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-23",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-24",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-25",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-26",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-27",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-28",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-29",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-30",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-31",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Conflates 'actual session time' (375 min) with patient presence minutes: the 375-minute total is Rowan's presence time, not a session-running-time figure. The reference answer defines 375 as presence minutes, which candidate-1 also uses for therapy calculations, so the label is misleading but the arithmetic is correct.",
+    "Therapy minutes per session are computed as patient-presence-minus-break (45, 75, 60, 45, 75 = 300), which is correct, but the answer labels the 375-minute subtotal as 'actual session time (time the session ran, minus the nontherapeutic break)' \u2014 this is incorrect framing; 375 is presence before subtracting breaks, not after.",
+    "The required reconciliation of the 150-minute gap (75 min outside presence + 75 min breaks) is not explicitly stated; the answer omits the gap decomposition required by the second required fact.",
+    "Uncertainty about whether the break overlapped with Rowan's absence on Jan 6 (break 10:45\u201311:00, Rowan arrived 10:15, left 11:15 \u2014 break is within presence, so 15 min deducted correctly) is handled correctly, but the Jan 19 break (10:45\u201311:00) falls within Rowan's presence (10:00\u201311:15), also correctly handled."
+   ]
+  },
+  {
+   "id": "DEV-32",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-33",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-34",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-35",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-36",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-37",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-38",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-39",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-40",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-41",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-42",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-43",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-44",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-45",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-46",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-47",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-48",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-49",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 1,
+   "missing_or_wrong": [
+    "Fabricates a January 13 safety finding ('denied a new medication-related concern requiring urgent intervention') \u2014 no such explicit safety statement appears in the supplied documentary evidence for that date; the cited passage is not among the verified source excerpts and the claim is not supported.",
+    "Omits the January 30 PHQ-9 item 9 = 0 finding, which is a required fact to distinguish from the narrative note.",
+    "Does not note that item 9 = 0 applies only to the January 30 questionnaire and should not be inferred for earlier dates (required uncertainty partially missing).",
+    "Counts six safety findings but one (Jan 13) is unsupported/fabricated, making the enumeration materially inaccurate."
+   ]
+  },
+  {
+   "id": "DEV-50",
+   "status": "partial",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-51",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-52",
+   "status": "partial",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-53",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-54",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-55",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-56",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Claims a fabricated quote: 'the patient retained the same outpatient chart identifier throughout the day's services' as a bridging statement between early- and later-January periods \u2014 this quote exists but refers only to January 19 services, not as a general bridge across the full date range as implied.",
+    "Invents 'BH-D006 (the appointment desk export)' as a named document linking all early-January encounters \u2014 the actual document is referenced differently in the record and this specific document ID is not supported.",
+    "Mentions 'group facilitators (Leena Park, LPC early; Leah Chen, LCSW later)' as part of the clinician-change narrative, which is accurate but not required; more importantly, the answer does not explicitly state that Casey Mercer is the partner (not the patient), which is a required fact.",
+    "Does not clearly articulate the required fact that Casey is the partner/separate entity from the patient, only mentioning Casey as 'partner' in passing without distinguishing this from the clinician-change question."
+   ]
+  },
+  {
+   "id": "DEV-57",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-58",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Third example is wrong: uses a Jan 20 attendance correction (departure time fix) instead of the required Jan 10 signature \u2192 Jan 9 family visit (Leena Park / HG-E104). The Jan 9/10 example is entirely absent.",
+    "Because the third required example is replaced by a fabricated/irrelevant one, the answer is incomplete on required facts.",
+    "The attendance correction example does not match any of the three required fact pairs."
+   ]
+  },
+  {
+   "id": "DEV-59",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 2,
+   "missing_or_wrong": [
+    "Jan 19 analysis is wrong: the rule would NOT produce a defensible result because the latest-received document (BH-D104, received Jan 26) shows departure 11:30, which contradicts the explicit correction (11:15). A blanket latest-document rule would discard the correction and yield the wrong answer.",
+    "Candidate incorrectly states the rule 'changes nothing of substance' for Jan 19; in fact it would override the explicit correction with the uncorrected resent roster.",
+    "Does not articulate that recency must not be applied as a universal rule (required fact)."
+   ]
+  },
+  {
+   "id": "DEV-60",
+   "status": "answered",
+   "factual": 1,
+   "evidence": 1,
+   "missing_or_wrong": [
+    "Strongest supported weekly conclusion is misidentified: candidate claims week of Jan 19\u201325 with 3 days and 180 minutes, but the question asks about the final (Jan 26\u2013Feb 1) week and its boundary; the reference answer focuses on that week's in-scope coverage through Jan 30 with 3 days and 145 or 155 minutes",
+    "Fails to name the Jan 26 conflict (dual records for same encounter giving 50 vs 40 minutes) that leaves the minute total and overall status unresolved \u2014 required uncertainty not preserved",
+    "Claims 'no recorded encounters' for Jan 31\u2013Feb 1 rather than correctly stating no supplied record establishes services or absence of services on those days (improperly implies confirmed service-free)",
+    "Aggregate totals across all weeks (11 days, 585\u2013595 minutes) are outside the scope of the question and unsupported by supplied evidence"
+   ]
+  },
+  {
+   "id": "DEV-61",
+   "status": "answered",
+   "factual": 0,
+   "evidence": 0,
+   "missing_or_wrong": [
+    "Fails to identify any of the required linkages: BH-D007/BH-D008 to HG-E104 (Jan 9 family, cofacilitator record); BH-D101/BH-D102/BH-D103/BH-D104 to HG-E110 (Jan 19 group content, original attendance, correction, resend); BH-D106 dual calls to HG-E112/HG-A112 (Jan 21 reconnect); BH-D110/BH-D111 to HG-E115/HG-A115 (Jan 26 competing clinician records); BH-D013/BH-D014 to HG-Q116 (Jan 16 PHQ-9 and Jan 26 import deduplication); BH-D112/BH-D108 to HG-E116 (Jan 27 no-show/draft/charge without attended encounter).",
+    "Invents non-existent records (BH-D016, BH-D016 group cancellation notice linking to HG-E109) and fabricates a linkage not present in the source documents.",
+    "Misidentifies the Jan 16/Jan 26 PHQ-9 deduplication: correctly notes the import is a copy but frames it as a minor corroboration point rather than the required deduplication of BH-D013 and BH-D014 (imported_measure_summary_received_jan26) under HG-Q116.",
+    "Introduces irrelevant Jan 30 PHQ-9 discussion not part of the required linkage task.",
+    "Central conclusion is wrong: the answer identifies none of the required record pairs/groups from the reference answer.",
+    "No uncertainty about file-level vs. event-level deduplication preserved (BH-D107 and BH-D108 each covering multiple events is not mentioned).",
+    "Cited evidence references fabricated document IDs (BH-D016, partner_collateral_jan16, early_appointment_status_export, group_cancellation_notice_jan15) that do not correspond to the supplied documentary evidence."
+   ]
+  },
+  {
+   "id": "DEV-62",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-63",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-64",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 2,
+   "missing_or_wrong": []
+  },
+  {
+   "id": "DEV-65",
+   "status": "answered",
+   "factual": 2,
+   "evidence": 1,
+   "missing_or_wrong": [
+    "Cites 'early_appointment_status_export' which is not among the supplied documentary evidence and may not exist; the reference answer instead names the Jan 19 roster retransmission, Jan 16 measurement import, Jan 27 charge, and signature order as the non-resolving records \u2014 candidate names only generic 'appointment desk export' and 'early appointment status export' without grounding them in the actual available documents"
+   ]
+  }
+ ]
+}

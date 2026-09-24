@@ -1,0 +1,250 @@
+# policy.toml — the engine's only domain knowledge. Versioned and reviewed like code.
+# Adding a new kind of observation or field is a change here, not in the engine.
+
+version = "policy-2"
+
+# ---------------------------------------------------------------------------------------------
+# Observation kinds and their fields. The extraction prompt and value validation are generated
+# from this table. Types: date (ISO), time (HH:MM, 24 h), minutes (number), number, text,
+# list (comma-separated text), enum (one of `values`), bool (yes|no).
+# ---------------------------------------------------------------------------------------------
+[kinds.doc_meta]
+description = "One per document: what the document is and who issued it."
+fields = [
+  { name = "title", type = "text", about = "document heading or type as written" },
+  { name = "issuer", type = "text", about = "organization or system that issued the document, as named" },
+  { name = "document_id", type = "text", about = "identifier the document gives itself" },
+  { name = "patient_name", type = "text", about = "patient named in the header" },
+  { name = "patient_dob", type = "date", about = "patient date of birth" },
+  { name = "patient_mrn", type = "text", about = "patient record number" },
+  { name = "episode_start", type = "date", about = "start of a stated episode or review period" },
+  { name = "episode_end", type = "date", about = "end of a stated episode or review period" },
+]
+
+[kinds.contact]
+description = "One per contact with or about the patient the document records: visits and appointments (attended or not), phone calls, messages, outreach and collateral contacts."
+fields = [
+  { name = "encounter_id", type = "text", about = "encounter/visit number exactly as written" },
+  { name = "appointment_id", type = "text", about = "appointment or booking number, if separate" },
+  { name = "date", type = "date", about = "service date of the encounter (never a signature or receipt date)" },
+  { name = "service", type = "text", about = "kind of service as the document names it" },
+  { name = "mode", type = "text", about = "how the contact happened (in person, video, phone call, message, portal) as written" },
+  { name = "status_reason", type = "text", about = "the reason the document gives for the status (why missed, cancelled, late, left early, not present), as stated; omit if none is given" },
+  { name = "status_claim", type = "enum", values = ["attended", "partial", "no_show", "cancelled_by_patient", "cancelled_by_clinic", "cancelled_unspecified", "not_present", "scheduled", "unknown"], about = "what the document says happened for the patient: partial = attended part; no_show = did not come without cancelling; cancelled_by_patient / cancelled_by_clinic = cancelled beforehand by that side; cancelled_unspecified = cancelled, side not stated; not_present = the service happened without the patient; scheduled = only booked" },
+  { name = "patient_present", type = "bool", about = "whether the patient was present, only when stated" },
+  { name = "start", type = "time", about = "when the patient's actual contact/presence began (arrival), only when stated" },
+  { name = "end", type = "time", about = "when the patient's actual contact/presence ended (departure), only when stated" },
+  { name = "stated_minutes", type = "minutes", about = "a duration the document states for the patient's contact; never computed" },
+  { name = "scheduled_start", type = "time", about = "booked start" },
+  { name = "scheduled_end", type = "time", about = "booked end" },
+  { name = "participants", type = "text", about = "who took part" },
+  { name = "issuer", type = "text", about = "issuer of the encounter number, when the row names one" },
+]
+
+[kinds.interval]
+description = "A further timed segment within an encounter: a break, a connection gap, a split segment, or time with/without the patient."
+fields = [
+  { name = "encounter_id", type = "text", about = "encounter it belongs to" },
+  { name = "date", type = "date", about = "service date" },
+  { name = "role", type = "enum", values = ["presence", "service", "break", "gap", "scheduled", "other"], about = "break = non-service time; gap = lost connection/absence; presence/service = patient time" },
+  { name = "patient_present", type = "bool", about = "whether the patient was present during it" },
+  { name = "start", type = "time", about = "start" },
+  { name = "end", type = "time", about = "end" },
+  { name = "stated_minutes", type = "minutes", about = "stated duration of this segment" },
+  { name = "participants", type = "text", about = "who was present" },
+]
+
+[kinds.charge]
+description = "One per billing or charge entry (charge row, claim, payment, reversal)."
+fields = [
+  { name = "charge_id", type = "text", about = "charge or claim identifier" },
+  { name = "encounter_id", type = "text", about = "encounter it is billed against" },
+  { name = "date", type = "date", about = "service date billed" },
+  { name = "service", type = "text", about = "service description" },
+  { name = "code", type = "text", about = "billing or procedure code, only when written" },
+  { name = "quantity", type = "text", about = "quantity or units billed" },
+  { name = "status", type = "enum", values = ["posted", "submitted", "paid", "denied", "reversed", "void", "unknown"], about = "charge status as written" },
+  { name = "amount", type = "text", about = "amount, only when written" },
+]
+
+[kinds.measurement]
+description = "One per administered instrument or scored item."
+fields = [
+  { name = "instrument", type = "text", about = "instrument/scale name" },
+  { name = "item", type = "text", about = "item number or name when the score is for one item" },
+  { name = "score", type = "number", about = "score as written" },
+  { name = "completed_on", type = "date", about = "date the patient completed it (not the review or import date)" },
+  { name = "form_id", type = "text", about = "form or submission identifier" },
+  { name = "interpretation", type = "text", about = "stated severity band or interpretation" },
+]
+
+[kinds.medication]
+description = "One per medication mention with its action."
+fields = [
+  { name = "name", type = "text", about = "medication name" },
+  { name = "dose", type = "text", about = "dose as written" },
+  { name = "schedule", type = "text", about = "frequency/timing" },
+  { name = "change", type = "enum", values = ["start", "stop", "adjust", "continue", "none_stated"], about = "action taken" },
+  { name = "date", type = "date", about = "date of the decision" },
+]
+
+[kinds.plan_goal]
+description = "One per measurable target in a plan (one observation per threshold)."
+fields = [
+  { name = "basis", type = "enum", values = ["treatment_goal", "authorization", "payer_limit", "program_rule", "other"], about = "what kind of target this is: a clinical treatment goal, a payer authorization of services, a payer limit, a program rule" },
+  { name = "target", type = "text", about = "what is counted, e.g. therapy days or minutes" },
+  { name = "threshold", type = "number", about = "the minimum (or maximum) number" },
+  { name = "comparator", type = "enum", values = ["at_least", "at_most", "exactly"], about = "how the threshold applies" },
+  { name = "unit", type = "enum", values = ["days", "minutes", "sessions", "other"], about = "unit of the threshold" },
+  { name = "period", type = "enum", values = ["week", "day", "month", "episode", "other"], about = "period the threshold applies to" },
+  { name = "week_start", type = "enum", values = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "unknown"], about = "weekday a counting week starts on" },
+  { name = "eligible_services", type = "list", about = "services that count toward the target, as written" },
+  { name = "excluded_services", type = "list", about = "services stated not to count" },
+  { name = "effective_start", type = "date", about = "first day the goal applies" },
+  { name = "effective_end", type = "date", about = "last day the goal applies" },
+]
+
+[kinds.finding]
+description = "One per clinically meaningful statement: symptom, function, safety, intervention, plan, social, response."
+fields = [
+  { name = "text", type = "text", about = "faithful short paraphrase of what the document says" },
+  { name = "type", type = "enum", values = ["symptom", "function", "safety", "intervention", "plan", "social", "response", "risk", "other"], about = "clinical kind" },
+  { name = "reporter", type = "enum", values = ["clinician", "patient", "collateral", "system"], about = "who reports it" },
+  { name = "date", type = "date", about = "clinical date it refers to" },
+  { name = "encounter_id", type = "text", about = "encounter it was recorded in" },
+]
+
+# ---------------------------------------------------------------------------------------------
+# Provenance vocabulary (attached to every observation).
+# ---------------------------------------------------------------------------------------------
+[provenance]
+evidence_kinds = ["actual", "planned", "billed", "authorized", "templated", "reported"]
+attestations = ["signed", "unsigned", "draft", "auto", "unknown"]
+relations = ["corrects", "copy_of", "addendum", "none"]
+recorded_roles = ["signed", "entered", "received", "imported", "exported", "prepared", "posted"]
+
+# ---------------------------------------------------------------------------------------------
+# Reconciliation.
+# ---------------------------------------------------------------------------------------------
+[admissible]
+# Which evidence kinds may answer each reconciled encounter field.
+attendance = ["actual"]
+status = ["actual"]
+presence_start = ["actual"]
+presence_end = ["actual"]
+stated_minutes = ["actual"]
+breaks = ["actual"]
+service = ["actual", "planned", "authorized", "billed", "templated"]
+date = ["actual", "planned", "billed", "authorized", "templated", "reported"]
+score = ["actual", "reported"]
+
+[refine]
+# Fields where a specific value refines a generic one instead of contradicting it. For service,
+# a value naming a known category (from [services]) refines free text ("outpatient
+# psychotherapy" + "individual therapy" -> individual); for the others, [refine.values] lists
+# which specific values refine each generic one.
+fields = ["service", "status"]
+
+[refine.values.status]
+attended = ["partial"]
+cancelled_unspecified = ["cancelled_by_patient", "cancelled_by_clinic"]
+not_present = ["no_show"]  # a no-show says why the service went on without the patient
+
+[precedence]
+# Higher tiers win; ties with different values are conflicts, kept as scenarios.
+attestation_rank = { signed = 3, unknown = 2, unsigned = 1, draft = 0, auto = 0 }
+# An account recorded within this many days of the event is contemporaneous and outranks a
+# later (retrospective) account of the same tier.
+contemporaneous_days = 1
+# When an account was made is its authoring time (signature or entry). Preparing, exporting,
+# receiving, importing or posting a record later does not make its content later.
+authoring_roles = ["signed", "entered"]
+
+[attendance]
+# status (reconciled from status_claim) -> attendance. patient_present = no always means not
+# attended. "scheduled" and "unknown" say nothing about what happened.
+attended = ["attended", "partial"]
+not_attended = ["no_show", "cancelled_by_patient", "cancelled_by_clinic", "cancelled_unspecified", "not_present"]
+
+[counting]
+# creditable time = patient presence minus breaks and gaps (interval algebra, per scenario);
+# the services that count come from the care goal's eligible services
+max_scenarios = 64
+
+# Canonical service names: a service text maps to the first canonical name whose keywords it
+# contains (case-insensitive, whole words). Unmatched text is kept as written.
+[services]
+order = ["medication", "coordination", "collateral", "family", "group", "individual", "assessment", "administrative"]
+medication = ["medication", "pharmacotherapy", "prescriber", "psychiatric medication"]
+coordination = ["coordination", "case management", "care coordination"]
+collateral = ["collateral"]
+family = ["family", "couples", "conjoint"]
+group = ["group"]
+individual = ["individual", "psychotherapy session"]
+assessment = ["assessment", "measure", "intake evaluation"]
+administrative = ["scheduling", "outreach", "records", "billing", "administrative", "import", "notice", "reminder", "confirming", "confirmation"]
+# Categories that record handling of the chart, not a care contact with the patient.
+not_care = ["administrative"]
+
+[link]
+# Weighted match for observations without a shared identifier. Weights are set by hand here,
+# not estimated from data.
+weights = { date = 0.3, service = 0.3, time_equal = 0.4, time_overlap = 0.3, participants = 0.2, issuer = 0.1 }
+# Words that do not distinguish one organisation from another when comparing issuer names
+# ("Lakeside Valley Health" = "Lakesidevalley").
+issuer_generic_words = ["behavioral", "behavioural", "health", "healthcare", "clinic", "center", "centre", "services", "inc", "llc", "the", "of"]
+T_link = 0.8
+T_candidate = 0.5
+copy_jaccard = 0.8
+shingle = 5
+
+[crosscheck]
+# Text fields compared between the two readings of a document (as identifiers, ignoring case and
+# punctuation), besides every date, time, duration, number, enumerated and yes/no field and the
+# service category. Free text (titles, reasons, paraphrases) is not compared.
+id_fields = ["encounter_id", "appointment_id", "document_id", "patient_mrn", "form_id", "charge_id", "instrument", "item", "issuer", "code"]
+
+[absence]
+# Words in a "not documented" claim -> the reconciled fields that would document it. Before a
+# claim of absence is published, code looks these fields up for the events the claim names.
+duration = ["minutes", "session_minutes", "stated_minutes"]
+minutes = ["minutes", "session_minutes", "stated_minutes"]
+length = ["minutes", "session_minutes", "stated_minutes"]
+"how long" = ["minutes", "session_minutes", "stated_minutes"]
+reason = ["status_reason"]
+why = ["status_reason"]
+explanation = ["status_reason"]
+score = ["score"]
+baseline = ["score"]
+clinician = ["participants"]
+participant = ["participants"]
+attendee = ["participants"]
+arrival = ["presence_start"]
+departure = ["presence_end"]
+booked = ["scheduled"]
+"scheduled time" = ["scheduled"]
+mrn = ["patient_mrn"]
+"record number" = ["patient_mrn"]
+"chart identifier" = ["patient_mrn"]
+"medical record" = ["patient_mrn"]
+"date of birth" = ["patient_dob"]
+dob = ["patient_dob"]
+"birth date" = ["patient_dob"]
+dose = ["dose"]
+dosing = ["schedule", "dose"]
+frequency = ["schedule"]
+# qualifiers that make a claim relative ("before January 5", "other than the intake"); such a
+# claim cannot be settled by looking up the named event, so it goes to the passage check
+relative = ["before", "after", "between", "within", "interim", "intervening", "prior to", "other than", "besides", "apart from", "except", "since", "outside", "beyond", "any other", "additional", "separate", "new", "newly"]
+
+[goals]
+# A later-recorded goal for the same unit and period replaces an earlier one from its own
+# effective start (earlier dates keep the earlier goal). Goals with unknown or equal record
+# times are judged together.
+later_supersedes = true
+
+# [patient]
+# Optional: the record's patient. Without it, the patient is the MRN most documents state;
+# a document stating another MRN or date of birth is set aside.
+# mrn = "..."
+# dob = "YYYY-MM-DD"

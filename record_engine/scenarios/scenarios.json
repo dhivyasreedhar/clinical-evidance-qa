@@ -1,0 +1,506 @@
+[
+ {
+  "id": "S01",
+  "title": "Late-entry addendum resolves the HG-E115 conflict (12-hour times, abbreviations, /s/ signature)",
+  "add": [
+   "S01_addendum_HG-E115_late_entry.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E115",
+    "field": "minutes",
+    "value": 50,
+    "status": [
+     "established"
+    ]
+   },
+   {
+    "type": "total",
+    "sessions": 12,
+    "days": 11,
+    "minutes": [
+     595
+    ]
+   },
+   {
+    "type": "week",
+    "start": "2026-01-26",
+    "status": "met"
+   }
+  ],
+  "questions": [
+   {
+    "id": "S01-Q1",
+    "question": "How many patient-present therapy minutes did Rowan receive in the week of January 26 to February 1, 2026, and was the weekly treatment-plan goal met?",
+    "reference": "155 minutes on 3 therapy days: HG-E115 on January 26 is 50 minutes because Nora Ellis's signed addendum of 01/28/2026 corrected Rowan's arrival to 9:00 AM (not 9:10 AM); HG-E118 on January 29 is 75 minutes; HG-E119 on January 30 is 30 minutes. The goal (at least 3 therapy days and 150 minutes) was met.",
+    "must": [
+     "\\b155\\b",
+     "\\bmet\\b"
+    ],
+    "must_not": [
+     "145 or 155",
+     "145 and 155"
+    ]
+   },
+   {
+    "id": "S01-Q2",
+    "question": "What was Rowan's total patient-present therapy time for the whole episode, in minutes and hours?",
+    "reference": "595 minutes (9 hours 55 minutes) across 12 sessions; the January 26 duration is settled at 50 minutes by the 01/28 addendum.",
+    "must": [
+     "\\b595\\b"
+    ],
+    "must_not": [
+     "585 or 595",
+     "\\b585\\b"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "title": "New session arrives in a CSV scheduling export (US dates, 12-hour times)",
+  "add": [
+   "S02_scheduling_export_2026-01-27.csv.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E121",
+    "field": "minutes",
+    "value": 45
+   },
+   {
+    "type": "total",
+    "sessions": 13,
+    "days": 12,
+    "minutes": [
+     630,
+     640
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "S02-Q1",
+    "question": "How many individual psychotherapy sessions did Rowan attend during the episode, and on which dates?",
+    "reference": "6 individual sessions: January 5, 14, 19, 21, 26 and 27, 2026 (the January 27 session, HG-E121, 2:00-2:45 PM, comes from the scheduling export). The January 8 no-show and January 28 patient cancellation are not attended sessions.",
+    "must": [
+     "\\b(6|six)\\b",
+     "27"
+    ],
+    "must_not": []
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "title": "Family session documented only by a stated length ('1 hr 15 min'), day-month date format",
+  "add": [
+   "S03_family_session_2026-01-23.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E122",
+    "field": "minutes",
+    "value": 75
+   },
+   {
+    "type": "total",
+    "sessions": 13,
+    "days": 12,
+    "minutes": [
+     660,
+     670
+    ]
+   },
+   {
+    "type": "week",
+    "start": "2026-01-19",
+    "status": "met"
+   }
+  ],
+  "questions": [
+   {
+    "id": "S03-Q1",
+    "question": "How much family therapy did Rowan receive, session by session and in total?",
+    "reference": "Three family sessions: January 9 (HG-E104) 45 minutes, January 23 (HG-E122) 75 minutes, January 30 (HG-E119) 30 minutes; 150 minutes in total. The January 16 partner-only collateral contact is not family therapy with Rowan present.",
+    "must": [
+     "\\b150\\b",
+     "\\b75\\b",
+     "\\b45\\b",
+     "\\b30\\b"
+    ],
+    "must_not": []
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "title": "E-mail correction: the January 22 attendance row belonged to another patient",
+  "add": [
+   "S04_email_attendance_correction_HG-E113.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E113",
+    "field": "disposition",
+    "value": "excluded"
+   },
+   {
+    "type": "total",
+    "sessions": 11,
+    "days": 10,
+    "minutes": [
+     540,
+     550
+    ]
+   },
+   {
+    "type": "week",
+    "start": "2026-01-19",
+    "status": "not_met"
+   }
+  ],
+  "questions": [
+   {
+    "id": "S04-Q1",
+    "question": "Did Rowan attend the January 22 skills group, and what does that mean for the weekly goal in the week of January 19 to 25?",
+    "reference": "No. Leah Chen's signed correction of 01/26/2026 states the register row (10:30-11:30) was entered in error for another group member and Rowan did not attend. The week then has 2 therapy days (January 19 and 21) and 135 minutes, so the goal (3 days, 150 minutes) was not met.",
+    "must": [
+     "did not attend|not attend|no\\b",
+     "\\b135\\b",
+     "not met"
+    ],
+    "must_not": [
+     "\\b180\\b.*\\bmet\\b"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "title": "OCR-damaged unsigned draft gives a shorter duration",
+  "add": [
+   "S05_draft_note_HG-E107_ocr.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E107",
+    "field": "minutes",
+    "value": 45
+   },
+   {
+    "type": "total",
+    "sessions": 12,
+    "days": 11,
+    "minutes": [
+     585,
+     595
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "S05-Q1",
+    "question": "How long was the January 14 individual session, and is there any conflicting account of its length?",
+    "reference": "45 minutes (11:00-11:45) per the signed note. An unsigned, automatically saved draft says 11:00-11:30 (30 minutes); a signed final record outranks an unsigned draft, so 45 minutes stands.",
+    "must": [
+     "\\b45\\b",
+     "draft|unsigned"
+    ],
+    "must_not": []
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "title": "Paid claim line (835 remittance) for a cancelled appointment",
+  "add": [
+   "S06_claim_line_HG-E117.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E117",
+    "field": "disposition",
+    "value": "excluded"
+   },
+   {
+    "type": "total",
+    "sessions": 12,
+    "days": 11,
+    "minutes": [
+     585,
+     595
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "S06-Q1",
+    "question": "A paid claim exists for the January 28 individual appointment. Was that session delivered, and does it count toward Rowan's therapy minutes?",
+    "reference": "No. The patient cancelled before the appointment (cancellation received January 28 at 08:12, personal scheduling conflict). A paid claim or remittance does not document that care was delivered, so the appointment contributes 0 therapy minutes.",
+    "must": [
+     "cancel",
+     "not|no\\b"
+    ],
+    "must_not": [
+     "\\bwas delivered\\b"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "title": "A different patient's note is in the folder",
+  "add": [
+   "S07_other_patient_note.txt"
+  ],
+  "checks": [
+   {
+    "type": "no_event",
+    "id": "HG-E201"
+   },
+   {
+    "type": "open_item",
+    "kind": "other_patient",
+    "min": 1
+   },
+   {
+    "type": "total",
+    "sessions": 12,
+    "days": 11,
+    "minutes": [
+     585,
+     595
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "S07-Q1",
+    "question": "How many therapy sessions did Rowan attend in the week of January 19 to 25, and how many patient-present minutes?",
+    "reference": "4 sessions on 3 days (January 19 group and individual, January 21, January 22), 180 minutes. A note for another patient (Jordan Lee, MRN HG-M999) is not part of Rowan's record.",
+    "must": [
+     "\\b180\\b",
+     "\\b(4|four)\\b"
+    ],
+    "must_not": [
+     "\\b230\\b"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "title": "Another organisation uses the same visit number HG-E115",
+  "add": [
+   "S08_other_clinic_same_visit_number.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E115",
+    "field": "service",
+    "value": "individual"
+   },
+   {
+    "type": "fact",
+    "subject": "HG-E115",
+    "field": "minutes",
+    "scenarios": [
+     40,
+     50
+    ]
+   },
+   {
+    "type": "total",
+    "sessions": 12,
+    "days": 11,
+    "minutes": [
+     585,
+     595
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "S08-Q1",
+    "question": "What happened at encounter HG-E115 on January 26, 2026?",
+    "reference": "Harbor Grove individual psychotherapy with Mira Patel and Nora Ellis; creditable time is 40 or 50 minutes (the two signed records disagree on the start, 09:00 or 09:10). A Northside Community Clinic nutrition consult that afternoon uses the same visit number but is a different organisation's service, not this therapy encounter.",
+    "must": [
+     "\\b40\\b",
+     "\\b50\\b",
+     "individual"
+    ],
+    "must_not": []
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "title": "The signed treatment plan is withdrawn (no documented goal)",
+  "remove": [
+   "signed_treatment_plan_jan05"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E101",
+    "field": "disposition",
+    "value": "attended_no_goal"
+   },
+   {
+    "type": "fact",
+    "subject": "HG-E106",
+    "field": "disposition",
+    "value": "attended_no_goal"
+   }
+  ],
+  "questions": [
+   {
+    "id": "S09-Q1",
+    "question": "Did Rowan meet the weekly therapy goal in the week of January 19 to 25?",
+    "reference": "It cannot be judged: the supplied documents contain no treatment-plan goal (the group authorization letter is a payer authorization, not a care goal). What was delivered that week: individual and group sessions on January 19, 21 and 22 (180 patient-present minutes of individual and group psychotherapy).",
+    "must": [
+     "no (documented |treatment|care)|not (documented|established|possible)|cannot|can't"
+    ],
+    "must_not": [
+     "(?<!whether )\\bthe goal was (not )?met\\b",
+     "\\b(did not|didn't|failed to) meet\\b",
+     "(?<!whether )\\bRowan met\\b"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "title": "Plan amendment raises the weekly minute goal to 180 from 19 Jan (day-month dates)",
+  "add": [
+   "S10_plan_amendment_2026-01-19.txt"
+  ],
+  "checks": [
+   {
+    "type": "week",
+    "start": "2026-01-12",
+    "status": "not_met"
+   },
+   {
+    "type": "week",
+    "start": "2026-01-19",
+    "status": "met"
+   }
+  ],
+  "questions": [
+   {
+    "id": "S10-Q1",
+    "question": "Using the treatment goals in effect in each week, was the weekly minute goal met in the week of January 19 to 25 and in the week of January 26 to February 1?",
+    "reference": "The amendment signed 19 Jan 2026 sets 180 minutes per week from January 19. Week of January 19: 180 minutes, met. Week of January 26: 145 or 155 minutes (the January 26 duration is unresolved), below 180 in both scenarios, so the minute goal is not met for the documented days; the week is only partly inside the review period (ends January 30).",
+    "must": [
+     "\\b180\\b",
+     "145|155"
+    ],
+    "must_not": []
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "title": "Video session with a JSON platform log (seconds, ISO timestamps, dropped call)",
+  "add": [
+   "S11_video_platform_log_2026-01-29.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E123",
+    "field": "minutes",
+    "between": [
+     46,
+     48
+    ]
+   },
+   {
+    "type": "total",
+    "sessions": 13,
+    "days": 11
+   }
+  ],
+  "questions": [
+   {
+    "id": "S11-Q1",
+    "question": "How many minutes of patient contact occurred in the January 29 video session, excluding the dropped connection?",
+    "reference": "About 47 minutes: 15:00:00-15:18:30 and 15:21:10-15:50:00 (47 minutes 20 seconds); the 2 minutes 40 seconds between calls had no therapeutic contact.",
+    "must": [
+     "\\b4[67]\\b"
+    ],
+    "must_not": []
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "title": "Measures import with a re-imported form and a score after the review period",
+  "add": [
+   "S12_phq9_after_review_period.txt"
+  ],
+  "checks": [
+   {
+    "type": "measurement",
+    "instrument": "PHQ-9",
+    "completed_on": "2026-02-02"
+   }
+  ],
+  "questions": [
+   {
+    "id": "S12-Q1",
+    "question": "What was Rowan's latest PHQ-9 total within the January 5 to 30 review period, and how much did it change from intake?",
+    "reference": "10 on January 30, 2026; down 8 points from 18 at intake on January 5 (44.4% of the baseline). The February 2 score of 8 is after the review period, and the January 16 row in the import re-imports an existing form (14), not a new administration.",
+    "must": [
+     "\\b10\\b",
+     "\\b18\\b",
+     "44\\.4"
+    ],
+    "must_not": []
+   }
+  ]
+ },
+ {
+  "id": "S13",
+  "title": "Equal-standing note says the patient was a no-show for HG-E113",
+  "add": [
+   "S13_facilitator_noshow_HG-E113.txt"
+  ],
+  "checks": [
+   {
+    "type": "fact",
+    "subject": "HG-E113",
+    "field": "attendance",
+    "status": [
+     "conflicting"
+    ]
+   },
+   {
+    "type": "week",
+    "start": "2026-01-19",
+    "status": "cannot_determine"
+   }
+  ],
+  "questions": [
+   {
+    "id": "S13-Q1",
+    "question": "Did Rowan attend the January 22 skills group, and can the weekly goal for January 19 to 25 be judged?",
+    "reference": "The records conflict: the signed attendance register (Leah Chen) records Rowan from 10:30 to 11:30 (45 creditable minutes), while the signed co-facilitator note (Tomas Reyes) records a no-show. Neither supersedes the other, so attendance is unresolved and the week's goal cannot be determined (2 or 3 days; 135 or 180 minutes).",
+    "must": [
+     "conflict|disagree|unresolved|cannot",
+     "\\b135\\b|\\b180\\b"
+    ],
+    "must_not": []
+   }
+  ]
+ }
+]

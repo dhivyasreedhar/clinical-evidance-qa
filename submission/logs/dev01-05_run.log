@@ -1,0 +1,26 @@
+# DEV-01 to DEV-05, cold run of the current code (after the benchmark run)
+# Engine record-engine-0.3, policy-2. Models: claude-sonnet-4-6 (plan, answer, repair, judge),
+# claude-haiku-4-5-20251001 (answer review, framing, absence checks). Temperature 0.
+# Fresh model-output cache, so every call was made and timed. 5 questions answered in parallel.
+# Command:
+#   RECORD_ENGINE_CACHE=<empty dir> python -m record_engine ask --questions clinical_qa_benchmark/questions.json \
+#     --ids DEV-01 DEV-02 DEV-03 DEV-04 DEV-05 --out <run dir> --workers 5
+
+== ask
+{"usage": {"calls": 21, "cached": 0, "input_tokens": 268552, "output_tokens": 19079, "cost_usd": 0.8404, "full_cost_usd": 0.8404, "cached_seconds": 0.0, "by_stage": {"plan": 5, "answer": 5, "check": 5, "frame": 5, "absence": 1}}, "seconds": 122.8}
+
+== per question (cold)
+{"id": "DEV-01", "status": "partial", "calls": 4, "cost_usd": 0.2105, "seconds": 59.0}
+{"id": "DEV-02", "status": "answered", "calls": 4, "cost_usd": 0.1372, "seconds": 53.9}
+{"id": "DEV-03", "status": "answered", "calls": 4, "cost_usd": 0.1344, "seconds": 46.9}
+{"id": "DEV-04", "status": "answered", "calls": 4, "cost_usd": 0.1373, "seconds": 73.7}
+{"id": "DEV-05", "status": "answered", "calls": 5, "cost_usd": 0.221, "seconds": 75.8}
+{"total_cost_usd": 0.8404, "median_seconds": 59.0, "max_seconds": 75.8}
+{"id": "DEV-01", "reason": "a kind of record the count audit lists is not explained: contacts without a visit number or date (unnumbered phone call contact on an undated day (missed_visit_outreach_jan08))"}
+
+== grade (development judge, claude-sonnet-4-6)
+{"id": "DEV-01", "status": "partial", "factual": 2, "evidence": 2}
+{"id": "DEV-02", "status": "answered", "factual": 2, "evidence": 2}
+{"id": "DEV-03", "status": "answered", "factual": 2, "evidence": 2}
+{"id": "DEV-04", "status": "answered", "factual": 2, "evidence": 2}
+{"id": "DEV-05", "status": "answered", "factual": 2, "evidence": 2}

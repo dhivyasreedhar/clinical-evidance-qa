@@ -1,0 +1,6 @@
+REMITTANCE ADVICE (835) - EXTRACT
+Payer claim # 99-4471-A     Billing provider: HARBOR GROVE BEHAVIORAL HEALTH
+Patient: MERCER ROWAN   Member ID: 7781-22   MRN: HG-M042
+LN | DOS        | Enc     | CPT   | Units | Minutes | Billed  | Status
+1  | 01/28/2026 | HG-E117 | 90834 | 1     | 45      | 160.00  | PAID
+Posted automatically 02/04/2026. No clinical documentation attached.

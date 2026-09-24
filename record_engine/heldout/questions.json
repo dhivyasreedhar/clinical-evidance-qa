@@ -1,0 +1,62 @@
+[
+ {
+  "id": "HO-01",
+  "question": "For the Monday–Sunday week of January 12–18, 2026, which therapy sessions did Rowan attend, how many patient-present minutes did each contribute, and was the weekly treatment-plan goal met?"
+ },
+ {
+  "id": "HO-02",
+  "question": "What was Rowan's most recent PHQ-9 total, and by how many points and what percentage did it fall from the January 16 score?"
+ },
+ {
+  "id": "HO-03",
+  "question": "Which scheduled appointments between January 19 and January 30 were not delivered, and for each, who initiated the non-delivery and what reason is documented?"
+ },
+ {
+  "id": "HO-04",
+  "question": "Who took part in the January 23 contact, how long did it last, and does it count toward Rowan's therapy minutes?"
+ },
+ {
+  "id": "HO-05",
+  "question": "How many minutes did a clinician spend with Rowan's partner while Rowan was not present, across the whole episode?"
+ },
+ {
+  "id": "HO-06",
+  "question": "On which dates did Rowan have more than one clinical contact on the same day, and what were those contacts?"
+ },
+ {
+  "id": "HO-07",
+  "question": "How much patient-present individual psychotherapy did Rowan receive in the week of January 19–25, and in how many sessions?"
+ },
+ {
+  "id": "HO-08",
+  "question": "What coping skill did the facilitator demonstrate in the January 6 group, and what next step did Rowan choose?"
+ },
+ {
+  "id": "HO-09",
+  "question": "When and by whom was Rowan's treatment plan signed, and when was the patient's agreement recorded?"
+ },
+ {
+  "id": "HO-10",
+  "question": "On how many distinct calendar days did Rowan receive any patient-present clinical service (psychotherapy or medication management) during January 5–30?"
+ },
+ {
+  "id": "HO-11",
+  "question": "How many group psychotherapy minutes are credited for January 19–30, and which of those groups contributed the fewest minutes and why?"
+ },
+ {
+  "id": "HO-12",
+  "question": "Besides Mara Voss, did any other clinician document the January 9 family session, and when was that entry signed?"
+ },
+ {
+  "id": "HO-13",
+  "question": "Is a PHQ-9 item 9 score documented for the January 5 intake assessment?"
+ },
+ {
+  "id": "HO-14",
+  "question": "What employment determination or return-to-work date was set during the January 23 coordination call?"
+ },
+ {
+  "id": "HO-15",
+  "question": "How much time elapsed between Rowan leaving the January 19 group and the start of the added individual session?"
+ }
+]

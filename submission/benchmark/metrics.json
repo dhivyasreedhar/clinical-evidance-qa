@@ -1,0 +1,53 @@
+{
+  "scorer": "record-engine-evaluate-1",
+  "tokenization": "lower-alnum-v1",
+  "citation_units": "document blocks (blank-line paragraphs and table rows)",
+  "interval": "95% question-level bootstrap, exploratory (single patient)",
+  "questions": 65,
+  "statuses": {
+    "answered": 63,
+    "partial": 2
+  },
+  "citation_macro": {
+    "precision": 0.707,
+    "recall": 0.532,
+    "f1": 0.563
+  },
+  "citation_micro": {
+    "tp": 497,
+    "fp": 317,
+    "fn": 673,
+    "precision": 0.611,
+    "recall": 0.425,
+    "f1": 0.501
+  },
+  "citation_f1_ci": [
+    0.518,
+    0.606
+  ],
+  "exact_calculations": "4/4",
+  "structured_fields": {
+    "matched": 55,
+    "scored": 55,
+    "mismatched": [],
+    "unscored": []
+  },
+  "lexical_secondary": {
+    "bleu4_corpus": 0.0516,
+    "bleu4_sentence": 0.0673,
+    "rouge1_f1": 0.3486,
+    "rouge2_f1": 0.1271,
+    "rougeL_f1": 0.2251
+  },
+  "judge": {
+    "graded": 65,
+    "factual_points": "119/130",
+    "factual_mean": 1.831,
+    "factual_ci": [
+      1.723,
+      1.923
+    ],
+    "evidence_mean": 1.923,
+    "published_and_factual_2": 55
+  }
+}

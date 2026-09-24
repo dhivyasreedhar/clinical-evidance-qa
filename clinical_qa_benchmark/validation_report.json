@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "question_count": 65,
+  "source_document_count": 31,
+  "citation_count": 403,
+  "checks": [
+    {
+      "check": "question_schema",
+      "status": "passed",
+      "details": "65 objects; only id and question keys, matching the supplied input schema."
+    },
+    {
+      "check": "unique_ids_and_questions",
+      "status": "passed",
+      "details": "65 unique IDs and question strings."
+    },
+    {
+      "check": "original_questions_preserved",
+      "status": "passed",
+      "details": "The five example question objects are unchanged."
+    },
+    {
+      "check": "question_answer_alignment",
+      "status": "passed",
+      "details": "Every ground-truth item matches the question file in ID, text and order."
+    },
+    {
+      "check": "required_ground_truth_fields",
+      "status": "passed",
+      "details": "All answers include expected response, required facts, error tags, valid labels, and evidence."
+    },
+    {
+      "check": "source_identity",
+      "status": "passed",
+      "details": "All 31 document IDs, filenames, line counts and SHA-256 hashes match original source files."
+    },
+    {
+      "check": "exact_source_excerpts",
+      "status": "passed",
+      "details": "403 citation objects verified against exact inclusive one-based source line spans."
+    },
+    {
+      "check": "full_source_coverage",
+      "status": "passed",
+      "details": "All 31 documents are cited by at least one question."
+    },
+    {
+      "check": "manifest_question_mappings",
+      "status": "passed",
+      "details": "Every source-to-question mapping matches the ground truth."
+    },
+    {
+      "check": "independent_source_interval_arithmetic",
+      "status": "passed",
+      "details": "Recomputed contact intervals directly from source line timestamps, subtracting breaks and excluding absent-patient periods; all 12 encounter minute values match, including both January 26 alternatives."
+    },
+    {
+      "check": "encounter_partition",
+      "status": "passed",
+      "details": "HG-E101 through HG-E120 partition into 12 eligible psychotherapy encounters and 8 excluded encounters without overlap."
+    },
+    {
+      "check": "service_counts",
+      "status": "passed",
+      "details": "5 individual, 5 group, 2 family encounters."
+    },
+    {
+      "check": "distinct_therapy_days",
+      "status": "passed",
+      "details": "12 encounters on 11 distinct dates."
+    },
+    {
+      "check": "episode_minutes",
+      "status": "passed",
+      "details": "Two source-supported episode total scenarios: 585 and 595 minutes."
+    },
+    {
+      "check": "weekly_minutes_days_and_thresholds",
+      "status": "passed",
+      "details": "Monday–Sunday dates verified; weekly minutes 140, 120, 180, 145/155 and days 3,2,3,3 reproduce goal statuses not_met, not_met, met, cannot_determine."
+    },
+    {
+      "check": "hour_conversion",
+      "status": "passed",
+      "details": "585 minutes =9h45m; 595 minutes =9h55m."
+    },
+    {
+      "check": "phq9_change",
+      "status": "passed",
+      "details": "Source scores 18,14,10; 8-point baseline-to-final decrease, 44.4% of baseline."
+    }
+  ],
+  "limitations": "Automated checks validate schema, source identity/excerpt alignment, coverage and independently recomputed interval arithmetic. Narrative synthesis and evidence interpretation are authored judgments, not externally adjudicated clinical ground truth."
+}

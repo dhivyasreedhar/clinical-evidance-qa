@@ -1,0 +1,6 @@
+HARBOR GROVE BEHAVIORAL HEALTH,,,,,,,
+Scheduling export (CSV) generated 01/28/2026 07:30,,,,,,,
+Patient,DOB,MRN,,,,,
+"Mercer, Rowan",04/12/1991,HG-M042,,,,,
+Encounter,Date,Service,Clinician,Pt In,Pt Out,Status,Note
+HG-E121,01/27/2026,Individual psychotherapy,"Patel, Mira LCSW",2:00 PM,2:45 PM,Checked out,Added session at pt request after missed group

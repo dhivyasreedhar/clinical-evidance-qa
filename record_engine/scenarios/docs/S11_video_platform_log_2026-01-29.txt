@@ -1,0 +1,13 @@
+HARBOR GROVE BEHAVIORAL HEALTH
+Individual psychotherapy (video) | Encounter HG-E123 | Appointment HG-A123
+Rowan Mercer | DOB: 1991-04-12 | MRN: HG-M042 | 2026-01-29 | Clinician: Mira Patel, LCSW
+Patient psychotherapy contact per platform log below; the gap between calls was a dropped
+connection with no therapeutic contact.
+
+Platform session log (JSON export, local time):
+{"appointment": "HG-A123", "calls": [
+  {"call_id": "VC-123A", "joined": "2026-01-29T15:00:00", "left": "2026-01-29T15:18:30"},
+  {"call_id": "VC-123B", "joined": "2026-01-29T15:21:10", "left": "2026-01-29T15:50:00"}]}
+
+Rowan reviewed the message sent to the supervisor and planned the first day back.
+Electronically signed: Mira Patel, LCSW | January 29, 2026, 16:20

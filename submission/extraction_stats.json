@@ -1,0 +1,783 @@
+{
+ "run": {
+  "usage": {
+   "calls": 1,
+   "cached": 87,
+   "input_tokens": 1095,
+   "output_tokens": 408,
+   "cost_usd": 0.0094,
+   "full_cost_usd": 3.9194,
+   "cached_seconds": 2368.0,
+   "by_stage": {
+    "reread:group_cancellation_notice_jan15": 1
+   }
+  },
+  "seconds": 8.5
+ },
+ "crosscheck": {
+  "documents": 31,
+  "disagreements": 40,
+  "documents_reread": 12,
+  "rereads_rejected": [
+   {
+    "doc": "BH-D101_group_content_2026-01-19",
+    "invented": [
+     "HG-E110 contact.status_claim"
+    ]
+   },
+   {
+    "doc": "BH-D106_telehealth_2026-01-21",
+    "invented": [
+     "HG-E112 interval.attestation",
+     "HG-E112 interval.relation"
+    ]
+   },
+   {
+    "doc": "group_cancellation_notice_jan15",
+    "invented": [
+     "HG-E108 contact.service",
+     "HG-E108 contact.status_claim"
+    ]
+   },
+   {
+    "doc": "missed_visit_outreach_jan08",
+    "invented": [
+     "HG-E103 contact.evidence_kind"
+    ]
+   }
+  ],
+  "settled": 30,
+  "open": 10,
+  "points": [
+   {
+    "event": "HG-E102",
+    "doc": "early_group_attendance_roster",
+    "field": "contact.service",
+    "a": [],
+    "b": [
+     "group"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E105",
+    "doc": "early_group_attendance_roster",
+    "field": "contact.service",
+    "a": [],
+    "b": [
+     "group"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E109",
+    "doc": "early_appointment_status_export",
+    "field": "contact.status_claim",
+    "a": [
+     "attended"
+    ],
+    "b": [
+     "not_present"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E110",
+    "doc": "BH-D101_group_content_2026-01-19",
+    "field": "contact.status_claim",
+    "a": [
+     "attended"
+    ],
+    "b": [],
+    "outcome": "open"
+   },
+   {
+    "event": "HG-E110",
+    "doc": "BH-D103_attendance_correction_2026-01-20",
+    "field": "contact.service",
+    "a": [
+     "group"
+    ],
+    "b": [],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E112",
+    "doc": "BH-D106_telehealth_2026-01-21",
+    "field": "interval.evidence_kind",
+    "a": [
+     "actual",
+     "reported"
+    ],
+    "b": [
+     "actual"
+    ],
+    "outcome": "open"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D107_group_activity_records_2026-01-22_and_29",
+    "field": "contact.status_claim",
+    "a": [],
+    "b": [
+     "attended"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.attestation",
+    "a": [],
+    "b": [
+     "signed"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.date",
+    "a": [],
+    "b": [
+     "2026-01-22"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.encounter_id",
+    "a": [],
+    "b": [
+     "hge113"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.end",
+    "a": [],
+    "b": [
+     "11:30"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.evidence_kind",
+    "a": [],
+    "b": [
+     "actual"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.patient_present",
+    "a": [],
+    "b": [
+     "yes"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.role",
+    "a": [],
+    "b": [
+     "presence"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E113",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.start",
+    "a": [],
+    "b": [
+     "10:30"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E116",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "contact.service",
+    "a": [
+     "administrative",
+     "group"
+    ],
+    "b": [
+     "group"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E116",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "contact.status_claim",
+    "a": [
+     "no_show",
+     "not_present"
+    ],
+    "b": [
+     "no_show"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E116",
+    "doc": "BH-D112_draft_note_and_charge_extract_2026-01-27",
+    "field": "contact.attestation",
+    "a": [
+     "draft"
+    ],
+    "b": [
+     "auto",
+     "draft"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E116",
+    "doc": "BH-D112_draft_note_and_charge_extract_2026-01-27",
+    "field": "contact.status_claim",
+    "a": [
+     "scheduled"
+    ],
+    "b": [
+     "unknown"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E117",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "contact.patient_present",
+    "a": [],
+    "b": [
+     "no"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D107_group_activity_records_2026-01-22_and_29",
+    "field": "contact.status_claim",
+    "a": [],
+    "b": [
+     "attended"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.attestation",
+    "a": [],
+    "b": [
+     "signed"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.date",
+    "a": [],
+    "b": [
+     "2026-01-29"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.encounter_id",
+    "a": [],
+    "b": [
+     "hge118"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.end",
+    "a": [],
+    "b": [
+     "11:30"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.evidence_kind",
+    "a": [],
+    "b": [
+     "actual"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.patient_present",
+    "a": [],
+    "b": [
+     "yes"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.role",
+    "a": [],
+    "b": [
+     "presence"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E118",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "interval.start",
+    "a": [],
+    "b": [
+     "10:00"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E119",
+    "doc": "BH-D113_family_therapy_2026-01-30",
+    "field": "interval.stated_minutes",
+    "a": [
+     "30"
+    ],
+    "b": [
+     "30",
+     "45"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "HG-E120",
+    "doc": "BH-D114_medication_management_2026-01-30",
+    "field": "contact.patient_present",
+    "a": [
+     "yes"
+    ],
+    "b": [],
+    "outcome": "settled"
+   },
+   {
+    "event": "unnumbered administrative contact on 2026-01-27 (BH-D108_final_attendance_and_cancellation_register)",
+    "doc": "BH-D108_final_attendance_and_cancellation_register",
+    "field": "event",
+    "a": [
+     "recorded"
+    ],
+    "b": [
+     "not recorded"
+    ],
+    "outcome": "settled"
+   },
+   {
+    "event": "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23",
+    "doc": "group_cancellation_notice_jan15",
+    "field": "event",
+    "a": [
+     "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #23"
+    ],
+    "b": [
+     "unnumbered administrative contact on an undated day (group_cancellation_notice_jan15) #24"
+    ],
+    "outcome": "open"
+   },
+   {
+    "event": "unnumbered administrative contact on an undated day (missed_visit_outreach_jan08)",
+    "doc": "missed_visit_outreach_jan08",
+    "field": "event",
+    "a": [
+     "unnumbered administrative contact on an undated day (missed_visit_outreach_jan08)"
+    ],
+    "b": [
+     "unnumbered administrative contact on 2026-01-08 (missed_visit_outreach_jan08)"
+    ],
+    "outcome": "open"
+   },
+   {
+    "event": "unnumbered administrative contact on an undated day (missed_visit_outreach_jan08)",
+    "doc": "missed_visit_outreach_jan08",
+    "field": "contact.date",
+    "a": [],
+    "b": [
+     "2026-01-08"
+    ],
+    "outcome": "open"
+   },
+   {
+    "event": "unnumbered administrative contact on an undated day (missed_visit_outreach_jan08)",
+    "doc": "missed_visit_outreach_jan08",
+    "field": "contact.start",
+    "a": [
+     "15:36"
+    ],
+    "b": [],
+    "outcome": "open"
+   },
+   {
+    "event": "unnumbered phone call contact on an undated day (missed_visit_outreach_jan08)",
+    "doc": "missed_visit_outreach_jan08",
+    "field": "event",
+    "a": [
+     "unnumbered phone call contact on an undated day (missed_visit_outreach_jan08)"
+    ],
+    "b": [
+     "unnumbered phone call contact on 2026-01-08 (missed_visit_outreach_jan08)"
+    ],
+    "outcome": "open"
+   },
+   {
+    "event": "unnumbered phone call contact on an undated day (missed_visit_outreach_jan08)",
+    "doc": "missed_visit_outreach_jan08",
+    "field": "contact.date",
+    "a": [],
+    "b": [
+     "2026-01-08"
+    ],
+    "outcome": "open"
+   },
+   {
+    "event": "unnumbered phone call contact on an undated day (missed_visit_outreach_jan08)",
+    "doc": "missed_visit_outreach_jan08",
+    "field": "contact.start",
+    "a": [
+     "13:20"
+    ],
+    "b": [],
+    "outcome": "open"
+   },
+   {
+    "event": "unnumbered phone call contact on an undated day (missed_visit_outreach_jan08)",
+    "doc": "missed_visit_outreach_jan08",
+    "field": "contact.status_claim",
+    "a": [
+     "not_present"
+    ],
+    "b": [
+     "no_show"
+    ],
+    "outcome": "open"
+   }
+  ]
+ },
+ "per_document": [
+  {
+   "document": "BH-D101_group_content_2026-01-19",
+   "observations_first_pass": 12,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 12,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D102_original_attendance_2026-01-19",
+   "observations_first_pass": 7,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 7,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D103_attendance_correction_2026-01-20",
+   "observations_first_pass": 6,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 6,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D104_resent_roster_received_2026-01-26",
+   "observations_first_pass": 4,
+   "mentions_uncovered_first_pass": 1,
+   "dismissed": [
+    {
+     "block": "BH-D104_resent_roster_received_2026-01-26:L1-6",
+     "mention": "January 19",
+     "reason": "The subject line 'January 19 attendance copy' names the date of the document being transmitted, which is already covered by the contact's service date (2026-01-19) recorded from L10-16. The subject line itself states no independent new fact beyond identifying which roster was resent."
+    }
+   ],
+   "observations": 5,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D105_individual_2026-01-19",
+   "observations_first_pass": 11,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 11,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D106_telehealth_2026-01-21",
+   "observations_first_pass": 16,
+   "mentions_uncovered_first_pass": 1,
+   "dismissed": [
+    {
+     "block": "BH-D106_telehealth_2026-01-21:L7",
+     "mention": "HG-A112",
+     "reason": "The appointment ID HG-A112 is already captured in the existing contact observation for encounter HG-E112; this mention in L7 adds no new fact beyond confirming it is the same appointment already recorded."
+    }
+   ],
+   "observations": 17,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D107_group_activity_records_2026-01-22_and_29",
+   "observations_first_pass": 15,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 15,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D108_final_attendance_and_cancellation_register",
+   "observations_first_pass": 11,
+   "mentions_uncovered_first_pass": 7,
+   "dismissed": [
+    {
+     "block": "BH-D108_final_attendance_and_cancellation_register:L14",
+     "mention": "[L14] date: 'January 22'",
+     "reason": "This date is the signature/attestation date (record-time), already captured in the recorded.signed timestamp of the HG-E113 contact observation; it states no additional clinical fact."
+    },
+    {
+     "block": "BH-D108_final_attendance_and_cancellation_register:L16",
+     "mention": "[L16] date: 'January 27'",
+     "reason": "This date is the signature/attestation date (record-time), already captured in the recorded.signed timestamp of the HG-E116 contact observation; it states no additional clinical fact."
+    },
+    {
+     "block": "BH-D108_final_attendance_and_cancellation_register:L18",
+     "mention": "[L18] date: 'January 28'",
+     "reason": "This date is the entry/record date, already captured in the recorded.entered timestamp of the HG-E117 finding observation; it states no additional clinical fact."
+    },
+    {
+     "block": "BH-D108_final_attendance_and_cancellation_register:L20",
+     "mention": "[L20] date: 'January 29'",
+     "reason": "This date is the signature/attestation date (record-time), already captured in the recorded.signed timestamp of the HG-E118 contact observation; it states no additional clinical fact."
+    }
+   ],
+   "observations": 18,
+   "mentions_uncovered_final": 2
+  },
+  {
+   "document": "BH-D109_care_coordination_2026-01-23",
+   "observations_first_pass": 10,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 10,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D110_individual_primary_record_2026-01-26",
+   "observations_first_pass": 12,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 12,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D111_individual_second_record_2026-01-26",
+   "observations_first_pass": 13,
+   "mentions_uncovered_first_pass": 1,
+   "dismissed": [],
+   "observations": 14,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D112_draft_note_and_charge_extract_2026-01-27",
+   "observations_first_pass": 7,
+   "mentions_uncovered_first_pass": 1,
+   "dismissed": [
+    {
+     "block": "BH-D112_draft_note_and_charge_extract_2026-01-27:L25",
+     "mention": "January 30",
+     "reason": "This date refers to when the administrative extract was produced/captured, which is already covered by the doc_meta observation's provenance (the extract was prepared January 30, 2026). It is a record-production date, not a new clinical or administrative fact requiring a separate observation."
+    }
+   ],
+   "observations": 7,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D113_family_therapy_2026-01-30",
+   "observations_first_pass": 12,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 12,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D114_medication_management_2026-01-30",
+   "observations_first_pass": 14,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 14,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "BH-D115_symptom_measure_review_2026-01-30",
+   "observations_first_pass": 11,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 11,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "early_appointment_status_export",
+   "observations_first_pass": 13,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 13,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "early_group_attendance_roster",
+   "observations_first_pass": 6,
+   "mentions_uncovered_first_pass": 2,
+   "dismissed": [],
+   "observations": 7,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "family_cofacilitator_jan09",
+   "observations_first_pass": 11,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 11,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "family_primary_jan09",
+   "observations_first_pass": 13,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 13,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "group_authorization_letter",
+   "observations_first_pass": 3,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 3,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "group_cancellation_notice_jan15",
+   "observations_first_pass": 9,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 9,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "group_facilitator_jan06",
+   "observations_first_pass": 10,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 10,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "group_facilitator_jan12",
+   "observations_first_pass": 12,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 12,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "imported_measure_summary_received_jan26",
+   "observations_first_pass": 5,
+   "mentions_uncovered_first_pass": 2,
+   "dismissed": [
+    {
+     "block": "imported_measure_summary_received_jan26:L4-8",
+     "mention": "HG-MEAS-0126",
+     "reason": "This is the identifier of the source batch from which the result was imported; it is a provenance reference already captured in the doc_meta recorded/imported entry and does not constitute a separate fact requiring its own observation \u2014 it names the batch, not a document, charge, contact, or measurement instrument."
+    },
+    {
+     "block": "imported_measure_summary_received_jan26:L17",
+     "mention": "January 26",
+     "reason": "This date restates that January 26 is the receipt/filing date, which is already captured in the doc_meta recorded role=received (2026-01-26T07:44) and the measurement recorded role=imported (2026-01-26). The sentence adds no new fact beyond what is already covered."
+    }
+   ],
+   "observations": 9,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "individual_therapy_jan14",
+   "observations_first_pass": 13,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 13,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "intake_and_individual_jan05",
+   "observations_first_pass": 14,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 14,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "medication_review_jan13",
+   "observations_first_pass": 13,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 13,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "missed_visit_outreach_jan08",
+   "observations_first_pass": 9,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 9,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "partner_collateral_jan16",
+   "observations_first_pass": 12,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 12,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "signed_treatment_plan_jan05",
+   "observations_first_pass": 11,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 11,
+   "mentions_uncovered_final": 0
+  },
+  {
+   "document": "symptom_measure_review_jan16",
+   "observations_first_pass": 12,
+   "mentions_uncovered_first_pass": 0,
+   "dismissed": [],
+   "observations": 12,
+   "mentions_uncovered_final": 0
+  }
+ ]
+}
